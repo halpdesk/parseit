@@ -92,6 +92,6 @@ else:
 
 print_subreddits_overview(data)
 
-# print(f'\nComments in {data["subreddits"][0]["submissions"][2]["title"]}')
-# for comment in data["subreddits"][0]["submissions"][2]["comments"]:
-#     print_comment(comment)
+print(f'\nComments in {data["subreddits"][0]["submissions"][2]["title"]}')
+for comment in data["subreddits"][0]["submissions"][2]["comments"]:
+    print_comment(comment)
