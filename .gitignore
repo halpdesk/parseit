@@ -1,0 +1,10 @@
+.vscode
+python_modules
+*.pyc
+**/__pycache__
+.pytest_cache/
+dist/
+build/
+*.egg-info/
+*.p
+*.pdf
