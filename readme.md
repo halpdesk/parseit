@@ -13,6 +13,8 @@ grammatics, sociolinguistics, language technology.
 
 This project aims to scrape a set of chosen subreddits and parse the content (mainly comments) in a linguistic context for statistical analysis. It is specifically written for a university project, and might not be maintained when the first version of this program (considered an MVP, that is when it fully satisfies that project) is reached.
 
+_Do we communicate in order to state truths or do we speak truths (occasionally) so we can communicate? (Cherpas, 139)_
+
 ### Revision history
 
 | Revision   | Comment                       | Author          |
@@ -33,7 +35,15 @@ The main
 A pickle is used to store all reddit data after first run.
 SKLearn is used to classify and learn which comments score high depending on which combination of linguistic features.
 
-### Linguistic features
+### Features
+
+- Text length
+- TF*IDF - and perhaps score in conjunction with most common words in english
+- Otrhography - usage and quality of non-alphabetical characters (graphemes), capitalization, spelling (norms), emphasis
+- Syntax - phrase structure trees and dependency trees
+- Semantics - aspectual classes and reichenbach’s tenses
+- Pragmatics?
+- How well comment aligns with topic (similarity between topic and comment)
 
 ### Interesting papers and links
 
@@ -41,6 +51,7 @@ SKLearn is used to classify and learn which comments score high depending on whi
 - William Croft (1994) Semantic universals in classifier systems, Word, 45:2, 145-171, DOI: 10.1080/00437956.1994.11435922
 - 10000 most common words in english (https://github.com/first20hours/google-10000-english or https://www.kaggle.com/rtatman/english-word-frequency)
 - Muresan, S & Tzoukermann, E & Klavans, J L (), Combining Linguistic and Machine Learning Techniques for Email Summarization
+- Cherpas, C (1992). Natural language processing, pragmatics, and verbal behavior. Analysis Verbal Behav 10, 135–147. https://doi.org/10.1007/BF03392880 (Hämtad 2020-02-12)
 
 ## Set up and run
 
