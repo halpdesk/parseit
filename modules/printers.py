@@ -57,7 +57,7 @@ def print_subreddits_overview(subreddits, only_outlier_comments=True):
     for subreddit in subreddits:
         print_subreddit(subreddit)
         for submission in subreddit.submissions:
-            time.sleep(0.01)
+            # time.sleep(0.01)
             print_submission(submission)
             total_comment_score = sum([comment.score for comment in submission.comments])
             number_of_comments = len(submission.comments)

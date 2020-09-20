@@ -38,12 +38,24 @@ SKLearn is used to classify and learn which comments score high depending on whi
 ### Features
 
 - Text length
-- TF*IDF - and perhaps score in conjunction with most common words in english
+- Lexical and morphological
+  - TF*IDF
+  - common words in english
+  - profanity
 - Otrhography - usage and quality of non-alphabetical characters (graphemes), capitalization, spelling (norms), emphasis
+    (also consider rating emoticons / smilies usage)
 - Syntax - phrase structure trees and dependency trees
 - Semantics - aspectual classes and reichenbach’s tenses
-- Pragmatics?
 - How well comment aligns with topic (similarity between topic and comment)
+
+#### Uncertain
+
+- Pragmatics - implicature / Grice maxims
+
+### Problems
+
+- Comment score depends on views - once a comment is "hot" it attracts more views and more votes
+- n-level comments depend much on the first-level comment (POSSIBLE SOLUTION: consider only first-level comments)
 
 ### Interesting papers and links
 
@@ -70,6 +82,11 @@ python main.py --fetch-fresh --subreddits=science,todayilearned,dataisbeautiful 
 This command will create a new pickle file with the current timestamp in the filename. Each
 time the program is run without the flag `--fetch-fresh` it will load the latest pickle-file
 available in the _pickles_ subfolder.
+
+### Install NLTK
+
+1. `python -m nltk.downloader all`
+2. `sudo python -m nltk.downloader -d /usr/local/share/nltk_data all`
 
 ### Other / Old
 

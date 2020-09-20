@@ -18,7 +18,7 @@ def get_subreddits(subreddits, number_of_submissions):
         subreddit.submissions = []
         for submission in subreddit.hot(limit=number_of_submissions):
             submission.comments.list()
-            # todo: don't add submissoins with 0 comments
+            # todo: don't add submissions with 0 comments
             submission.comments.replace_more(limit=0)
             progress_bar(i+1, number_of_submissions*len(subreddits), prefix='Getting comments:', suffix='Complete', length=50)
             i = i+1

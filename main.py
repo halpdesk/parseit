@@ -4,6 +4,7 @@ import pprint
 
 from modules.printers import print_comment, print_subreddits_overview, print_comments, progress_bar
 from modules.reddit import get_subreddits
+from modules.tfidf import tf
 
 # parameters
 
@@ -28,5 +29,9 @@ else:
         pickle.dump(data, open("comments.p", "wb"))
 
 
-print_subreddits_overview(data)
+print_subreddits_overview(data, only_outlier_comments=True)
+
+print(data[1].submissions[2].comments[4].body)
+tf = tf(data[1].submissions[2].comments[4].body)
+print(tf)
 # print_comments(data)
