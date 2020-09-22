@@ -57,13 +57,28 @@ SKLearn is used to classify and learn which comments score high depending on whi
 - Comment score depends on views - once a comment is "hot" it attracts more views and more votes
 - n-level comments depend much on the first-level comment (POSSIBLE SOLUTION: consider only first-level comments)
 
-### Interesting papers and links
+### Interesting things
+
+#### Papers
 
 - Hatzivassiloglou, V & Klavans, J L & Eskin, E (1999), Detecting Text Similarity over Short Passages: Exploring Linguistic Feature Combinations via Machine Learning
 - William Croft (1994) Semantic universals in classifier systems, Word, 45:2, 145-171, DOI: 10.1080/00437956.1994.11435922
 - 10000 most common words in english (https://github.com/first20hours/google-10000-english or https://www.kaggle.com/rtatman/english-word-frequency)
 - Muresan, S & Tzoukermann, E & Klavans, J L (), Combining Linguistic and Machine Learning Techniques for Email Summarization
 - Cherpas, C (1992). Natural language processing, pragmatics, and verbal behavior. Analysis Verbal Behav 10, 135–147. https://doi.org/10.1007/BF03392880 (Hämtad 2020-02-12)
+
+#### Links
+
+##### TFIDF
+
+- https://towardsdatascience.com/text-summarization-using-tf-idf-e64a0644ace3
+- https://gdcoder.com/nlp-transforming-tokens-into-features-tf-idf/
+
+#### Concepts
+
+- For each token/(here: comment), we will have a feature column and this is called text vectorization.
+- Extracting n-grams to preserve some ordering (vs BOW - bag of words)
+- Stop-words = words articles and prepositions
 
 ## Set up and run
 
