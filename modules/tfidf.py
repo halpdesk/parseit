@@ -31,7 +31,8 @@ class TfIdf:
         stopWords = set(stopwords.words("english"))
         ps = PorterStemmer()
 
-        for msg in messages:
+        for i in range(len(messages)):
+            msg = messages[i]
             freq_table = {}
             words = word_tokenize(msg)
             for word in words:
@@ -45,7 +46,7 @@ class TfIdf:
                 else:
                     freq_table[word] = 1
 
-            frequency_matrix[msg[:15]] = freq_table
+            frequency_matrix[i] = freq_table
 
         return frequency_matrix
 
@@ -137,8 +138,9 @@ class TfIdf:
         message_count = 0
         summary = ''
 
-        for message in messages:
-            if message[:15] in message_value and message_value[message[:15]] >= (threshold):
+        for i in range(len(messages)):
+            message = messages[i]
+            if i in message_value and message_value[i] >= (threshold):
                 summary += " " + message
                 message_count += 1
 
@@ -155,8 +157,14 @@ class TfIdf:
         tf_idf_matrix = self._create_tf_idf_matrix(tf_matrix, idf_matrix)
         message_scores = self._score_messages(tf_idf_matrix)
         threshold = self._find_average_score(message_scores)
-        # summary = self._generate_summary(messages, message_scores, 1.3 * threshold)
-        pprint(message_scores)
+        summary = self._generate_summary(messages, message_scores, 1.3 * threshold)
+
+        for i in range(len(document)):
+            document[i]["features"]["tfidf_score"] = message_scores[i]
+            document[i]["features"]["tf_matrix"] = tf_matrix[i]
+            document[i]["features"]["idf_matrix"] = idf_matrix[i]
+        return document
+        # pprint(summary)
 
         # return tf_matrix
         # total_documents = len(sentences)

@@ -1,6 +1,6 @@
 
 import pickle
-import pprint
+from pprint import pprint
 
 from modules.printers import print_comment, print_subreddits_overview, print_comments, progress_bar
 from modules.reddit import get_subreddits
@@ -45,9 +45,9 @@ for subreddit in data:
                 "subreddit": subreddit.display_name,
                 "submission": submission.title,
                 "features": {
-                    "tf": 0,
-                    "idf": 0,
-                    "tfidf": 0,
+                    "tf_matrix": [],
+                    "idf_matrix": [],
+                    "tfidf_score": 0,
                     "length": 0,
                     "sentences": 0,
                     "common_word": 0,
@@ -64,4 +64,5 @@ for subreddit in data:
 # print(data[1].submissions[2].comments[4].body)
 tfidf = TfIdf()
 tfidf.tf(messages)
+pprint(messages)
 # print_comments(data)
