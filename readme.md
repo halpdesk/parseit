@@ -71,8 +71,13 @@ SKLearn is used to classify and learn which comments score high depending on whi
 
 ##### TFIDF
 
-- https://towardsdatascience.com/text-summarization-using-tf-idf-e64a0644ace3
-- https://gdcoder.com/nlp-transforming-tokens-into-features-tf-idf/
+- https://towardsdatascience.com/text-summarization-using-tf-idf-e64a0644ace3 - nltk
+- https://towardsdatascience.com/natural-language-processing-feature-engineering-using-tf-idf-e8b9d00e7e76 - how to use sklearn in few rows
+- https://gdcoder.com/nlp-transforming-tokens-into-features-tf-idf/ - sklearn with ngram
+
+##### Other
+
+- https://www.geeksforgeeks.org/removing-stop-words-nltk-python/ - how to remove stop-words
 
 #### Concepts
 
@@ -102,6 +107,11 @@ available in the _pickles_ subfolder.
 
 1. `python -m nltk.downloader all`
 2. `sudo python -m nltk.downloader -d /usr/local/share/nltk_data all`
+
+### Instlal lzma module for pandas
+
+1. `sudo apt-get install liblzma-dev` (for ubuntu/debian)
+2. `configure && make && make install` (in pyton)
 
 ### Other / Old
 

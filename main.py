@@ -4,6 +4,7 @@ from pprint import pprint
 
 from modules.printers import print_comment, print_subreddits_overview, print_comments, progress_bar
 from modules.reddit import get_subreddits
+from modules.tfidf_custom import TfIdfCustom
 from modules.tfidf import TfIdf
 
 # parameters
@@ -35,11 +36,11 @@ else:
 #   several (sentence =
 #       several (word =
 #           several character)))
-messages = []
+document = []
 for subreddit in data:
     for submission in subreddit.submissions:
         for comment in submission.comments:
-            messages.append({
+            document.append({
                 "body": comment.body,
                 "score": comment.score,
                 "subreddit": subreddit.display_name,
@@ -62,7 +63,10 @@ for subreddit in data:
 # Mark with features
 
 # print(data[1].submissions[2].comments[4].body)
+
+# tfidf_custom = TfIdfCustom()
+# tfidf_custom.measure(messages)
+# pprint(messages)
+
 tfidf = TfIdf()
-tfidf.tf(messages)
-pprint(messages)
-# print_comments(data)
+tfidf.measure(document)
