@@ -17,10 +17,11 @@ _Do we communicate in order to state truths or do we speak truths (occasionally)
 
 ### Revision history
 
-| Revision   | Comment                       | Author          |
-|------------|-------------------------------|-----------------|
-| 2020-09-16 | First version - Introduction  | Daniel Leppänen |
-| 2020-09-20 | Second version - Project      | Daniel Leppänen |
+| Revision   | Comment                          | Author          |
+|------------|----------------------------------|-----------------|
+| 2020-09-16 | First version - Introduction     | Daniel Leppänen |
+| 2020-09-20 | Project, features list and links | Daniel Leppänen |
+| 2020-09-24 | Install and run                  | Daniel Leppänen |
 
 ## Project
 
@@ -87,21 +88,11 @@ SKLearn is used to classify and learn which comments score high depending on whi
 
 ## Set up and run
 
-1. Create a reddit account and add an app: https://github.com/reddit-archive/reddit/wiki/OAuth2-Quick-Start-Example#first-steps
-2. Enable virtual env `source ./python_modules/bin/activate` (check with `which python`)
-3. Install packages `pip install -r requirements.txt`
-4. Add our python credentials and env settings in `.env`
-5. Run main file `python main.py`
+### Requirements
 
-To fetch reddit data again, run
-
-```sh
-python main.py --fetch-fresh --subreddits=science,todayilearned,dataisbeautiful --number-of-submissions=100
-```
-
-This command will create a new pickle file with the current timestamp in the filename. Each
-time the program is run without the flag `--fetch-fresh` it will load the latest pickle-file
-available in the _pickles_ subfolder.
+1. python 3.8
+2. NLTK data
+3. lzma module
 
 ### Install NLTK
 
@@ -111,7 +102,24 @@ available in the _pickles_ subfolder.
 ### Instlal lzma module for pandas
 
 1. `sudo apt-get install liblzma-dev` (for ubuntu/debian)
-2. `configure && make && make install` (in pyton)
+2. Reinstall python from source: `configure && make && make install` (in pyton3.8 folder)
+
+### Set up project
+
+1. Create a reddit account and add an app: https://github.com/reddit-archive/reddit/wiki/OAuth2-Quick-Start-Example#first-steps
+2. Create virtual env `python3.8 -m venv python_modules/`
+3. Enable virtual env `source ./python_modules/bin/activate` (check with `which python`)
+4. Install packages `pip install -r requirements.txt`
+5. Add our python credentials and env settings in `.env`
+
+### Run
+
+**Run program:**
+`python main.py`
+
+**To fetch reddit data again, run:**
+`python main.py --fetch-fresh --subreddits=science,todayilearned,dataisbeautiful --number-of-submissions=100`
+> This command will create a new pickle file with the current timestamp in the filename. Each time the program is run without the flag `--fetch-fresh` it will load the latest pickle-file available in the _pickles_ subfolder.
 
 ### Other / Old
 
