@@ -25,16 +25,14 @@ _Do we communicate in order to state truths or do we speak truths (occasionally)
 
 ## Project
 
-This code project is set up as easily as possible; resembling of a simple script but with some concern for separation of code.
-The main
+This code project is set up as easily as possible; resembling of a simple script but with some concern for separation of code. The main packages used by this project are:
 
 - nltk (natural language toolkit)
 - seaborn (graphs)
 - sklearn (ML)
 - praw (python reddit api wrapper)
 
-A pickle is used to store all reddit data after first run.
-SKLearn is used to classify and learn which comments score high depending on which combination of linguistic features.
+A pickle is used to store all reddit data after first run. SKLearn is used to classify and learn which comments score high depending on which combination of linguistic features gives high score.
 
 ### Features
 
