@@ -6,6 +6,8 @@ from modules.printers import print_comment, print_subreddits_overview, print_com
 from modules.reddit import get_subreddits
 from modules.tfidf_custom import TfIdfCustom
 from modules.tfidf import TfIdf
+from modules.word_stats import WordStats
+import os
 
 # parameters
 
@@ -52,7 +54,12 @@ for subreddit in data:
                     "length": 0,
                     "sentences": 0,
                     "common_word": 0,
-                    "swear_words": False,
+                    "words_count": 0,
+                    "stop_words_count": 0,
+                    "bad_words_count": 0,
+                    "bad_words": "",
+                    "letter_count": 0,
+                    # "swear_words": False, --- called bad_words
                     "emoticons": False,
                     "aspectual_class": 0,
                     "reichenbach_tense": 0,
@@ -64,9 +71,14 @@ for subreddit in data:
 
 # print(data[1].submissions[2].comments[4].body)
 
-# tfidf_custom = TfIdfCustom()
-# tfidf_custom.measure(messages)
-# pprint(messages)
+tfidf_custom = TfIdfCustom()
+tfidf_custom.measure(document)
 
-tfidf = TfIdf()
-tfidf.measure(document)
+word_stats = WordStats()
+# word_stats._list_bad_words()
+word_stats.measure(document)
+pprint(document)
+
+
+# tfidf = TfIdf()
+# tfidf.measure(document)

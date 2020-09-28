@@ -68,6 +68,12 @@ A pickle is used to store all reddit data after first run. SKLearn is used to cl
 
 #### Links
 
+##### POS
+
+Use POS to decide activum/passivum?
+
+- https://wibbu.com/using-python-and-nltk-to-automate-language-analysis-of-our-scripts/ (replace this later, it's worhless)
+
 ##### TFIDF
 
 - https://towardsdatascience.com/text-summarization-using-tf-idf-e64a0644ace3 - nltk
@@ -128,3 +134,30 @@ A pickle is used to store all reddit data after first run. SKLearn is used to cl
 - Use sklearn for ML
 - What constitutes a "good" good and a "bad" content?
     Content might need to be classified and rate of new content might need to be learned
+
+### From meeting seesions
+
+- Check research and find text features
+- Build text feature data from text, let the upvotes be the variable to predict (y)
+- Split the data in training data and test
+  Maybe use k-fold for training if not that much data https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.KFold.html
+- Use a regression, say random forest and train it on the data
+  https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html
+- Select hyper paramaters with a baysain optimization algorithm or CVGrid
+  https://scikit-optimize.github.io/stable/auto_examples/bayesian-optimization.html#sphx-glr-auto-examples-bayesian-optimization-py
+- Score the test data and see if the regression learned anything
+- Output the feature relevance for the score
+```python
+# Let's have a look at the feature importance
+fi = pd.DataFrame(data={"Feature": X.columns, "Importance": clf.feature_importances_ * 100, "Std": 100 * np.std([tree.feature_importances_ for tree in clf.estimators_], axis=0)})
+sns.barplot(x='Importance', y='Feature', color='gray',
+            data=fi.sort_values("Importance", ascending=False),
+            **{'xerr':fi["Std"], 'ecolor': '#333333'})
+plt.title('Feature importance \n')
+plt.xlabel('Importance (%)')
+plt.ylabel('Feature')
+```
+- Also check https://catboost.ai/ (categories like for tempuses)
+
+- https://www.kaggle.com/bittlingmayer/amazonreviews/notebooks
+- https://www.kaggle.com/fabiendaniel/customer-segmentation
