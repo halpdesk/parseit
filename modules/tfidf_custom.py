@@ -146,10 +146,12 @@ class TfIdfCustom:
 
         return summary
 
-    def measure(self, document):
-        # sentences = sent_tokenize(comment)
-        messages = [item["body"] for item in document]
-        total_documents = len(document)
+    def measure(self, df):
+        # messages = [item["body"] for item in document]
+        # total_documents = len(document)
+        messages = df.get("body")
+
+        total_documents = len(messages)
         frequenzy_matrix = self._create_frequency_matrix(messages)
         tf_matrix = self._create_tf_matrix(frequenzy_matrix)
         count_doc_per_words = self._create_documents_per_words(frequenzy_matrix)
@@ -159,12 +161,15 @@ class TfIdfCustom:
         threshold = self._find_average_score(message_scores)
         summary = self._generate_summary(messages, message_scores, 1.3 * threshold)
 
-        for i in range(len(document)):
-            document[i]["features"]["tfidf_score"] = message_scores[i]
-            document[i]["features"]["tf_matrix"] = tf_matrix[i]
-            document[i]["features"]["idf_matrix"] = idf_matrix[i]
-        return document
-        # pprint(summary)
+        # convert to list
+        tfidf_custom_score = [val for key,val in message_scores.items()]
 
-        # return tf_matrix
-        # total_documents = len(sentences)
+        df["tfidf_custom_score"] = tfidf_custom_score
+        # df["tf_matrix"] = tf_matrix
+        # df["idf_matrix"] = idf_matrix
+
+        # for i in range(len(document)):
+        #     document[i]["features"]["tfidf_score"] = message_scores[i]
+        #     document[i]["features"]["tf_matrix"] = tf_matrix[i]
+        #     document[i]["features"]["idf_matrix"] = idf_matrix[i]
+        return df

@@ -61,14 +61,21 @@ class WordStats:
 
         return words_count_list, stop_words_count_list, bad_words_count_list, bad_words_list
 
-    def measure(self, document):
-        messages = [item["body"] for item in document]
+    def measure(self, df):
 
+        # messages = [item["body"] for item in document]
+        messages = df.get("body")
         word_count_list, stop_words_count_list, bad_words_count_list, bad_words_list = self._count_words(messages)
 
-        for i in range(len(document)):
-            document[i]["features"]["words_count"] = word_count_list[i]
-            document[i]["features"]["stop_words_count"] = stop_words_count_list[i]
-            document[i]["features"]["bad_words_count"] = bad_words_count_list[i]
-            document[i]["features"]["bad_words"] = bad_words_list[i]
-        return document
+        # for i in range(len(df)):
+        #     df[i]["words_count"] = word_count_list[i]
+        #     df[i]["stop_words_count"] = stop_words_count_list[i]
+        #     df[i]["bad_words_count"] = bad_words_count_list[i]
+        #     df[i]["bad_words"] = bad_words_list[i]
+
+        df["words_count"] = word_count_list
+        df["stop_words_count"] = stop_words_count_list
+        df["bad_words_count"] = bad_words_count_list
+        df["bad_words"] = bad_words_list
+
+        return df

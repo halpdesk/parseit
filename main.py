@@ -10,6 +10,7 @@ from modules.word_stats import WordStats
 import os
 import sys
 import argparse
+import pandas as pd
 
 ## Command line usage and arg parsing
 
@@ -81,6 +82,7 @@ for subreddit in data:
                     "tf_matrix": [],
                     "idf_matrix": [],
                     "tfidf_score": 0,
+                    "tfidf_custom_score": 0,
                     "length": 0,
                     "sentences": 0,
                     "common_word": 0,
@@ -97,18 +99,33 @@ for subreddit in data:
                 }
             })
 
+
+df = pd.DataFrame(data={
+    "body": [item["body"] for item in document],
+    "tfidf_custom_score": [item["features"]["tfidf_custom_score"] for item in document],
+    "words_count": [item["features"]["words_count"] for item in document],
+    "stop_words_count": [item["features"]["stop_words_count"] for item in document],
+    "bad_words_count": [item["features"]["bad_words_count"] for item in document],
+    "bad_words": [item["features"]["bad_words"] for item in document],
+    "label": [item["score"] for item in document],
+})
+
+
+
+word_stats = WordStats()
+df = word_stats.measure(df)
+
+tfidf_custom = TfIdfCustom()
+df = tfidf_custom.measure(df)
+
+print(df)
+
 # Mark with features
 
 # print(data[1].submissions[2].comments[4].body)
 
-tfidf_custom = TfIdfCustom()
-tfidf_custom.measure(document)
-
-word_stats = WordStats()
-# word_stats._list_bad_words()
-word_stats.measure(document)
 
 
-tfidf = TfIdf()
-tfidf.measure(document)
-pprint(document)
+# # tfidf = TfIdf()
+# # tfidf.measure(document)
+# pprint(document)
