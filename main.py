@@ -8,28 +8,58 @@ from modules.tfidf_custom import TfIdfCustom
 from modules.tfidf import TfIdf
 from modules.word_stats import WordStats
 import os
+import sys
+import argparse
 
-# parameters
+## Command line usage and arg parsing
 
-use_pickle = True
-store_pickle = True
-subreddits = [
-    "Coronavirus",
+description="""
+This programs needs data from live reddit or stored pickle. Therefore, one of
+the command-line options --fetch-fresh or --load-pickle must be provided.
+If --fetch-fresh is supplied it would be good to --save-pickle as well.
+"""
+
+epilog="""
+Written in october 2020 for a private project in linguistics at Göteborg Universitet.
+By Daniel Leppänen.
+"""
+
+default_subreddits = [
+    # "Coronavirus",
     # "dataisbeautiful",
     # "explainlikeimfive",
     "science",
     "todayilearned",
     # "Awwducational",
 ]
-number_of_submissions=10
 
+parser = argparse.ArgumentParser(prog="python3.8 main.py", description=description, epilog=epilog)
+parser.add_argument("--fetch-fresh", dest="fetch_fresh", action="store_true", default=False, help="Use to fetch new comments")
+parser.add_argument("--save-pickle", dest="save_pickle", action="store_true", default=False, help="Use to save comment data to a pickle")
+parser.add_argument("--load-pickle", dest="load_pickle", action="store_true", default=False, help="Use to load comment data to a pickle")
+parser.add_argument("--subreddits",  dest="subreddits", nargs="+", default=default_subreddits, help="Which subreddits to parse for commments")
+parser.add_argument("--submissions", dest="submissions", default=10, type=int, help="How many submissions to fetch for each subreddit")
+arguments = vars(parser.parse_args())
 
-if use_pickle:
+fetch_fresh = arguments.get("use_reddit", False)
+load_picle = arguments.get("load_pickle", False)
+save_pickle = arguments.get("save_pickle", False)
+number_of_submissions = arguments.get("submissions", 10)
+subreddits = arguments.get("subreddits", default_subreddits)
+
+data = []
+
+if load_picle:
     data = pickle.load(open("comments.p", "rb"))
-else:
+
+if fetch_fresh:
     data = get_subreddits(subreddits, number_of_submissions)
-    if store_pickle:
-        pickle.dump(data, open("comments.p", "wb"))
+
+if save_pickle:
+    pickle.dump(data, open("comments.p", "wb"))
+
+if len(data) == 0:
+    sys.exit("No data loaded.")
 
 # print_subreddits_overview(data, only_outlier_comments=True)
 
@@ -77,8 +107,8 @@ tfidf_custom.measure(document)
 word_stats = WordStats()
 # word_stats._list_bad_words()
 word_stats.measure(document)
+
+
+tfidf = TfIdf()
+tfidf.measure(document)
 pprint(document)
-
-
-# tfidf = TfIdf()
-# tfidf.measure(document)

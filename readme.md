@@ -121,9 +121,25 @@ Use POS to decide activum/passivum?
 **Run program:**
 `python main.py`
 
+> Note: It will return "No data loaded", because data must be loaded with --fetch-fresh or with --load-pickle command line arguments.
+
 **To fetch reddit data again, run:**
-`python main.py --fetch-fresh --subreddits=science,todayilearned,dataisbeautiful --number-of-submissions=100`
-> This command will create a new pickle file with the current timestamp in the filename. Each time the program is run without the flag `--fetch-fresh` it will load the latest pickle-file available in the _pickles_ subfolder.
+`python main.py --fetch-fresh --save--pickle --subreddits=science,todayilearned,dataisbeautiful --number-of-submissions=100`
+> This command will create a new pickle file in the current directory called _comments.p_.
+
+**To use earlier fetched reddit data:**
+`python main.py --load-pickle`
+
+Here is a list of command line arguments.
+
+```bash
+  -h, --help            show this help message and exit
+  --fetch-fresh         Use to fetch new comments
+  --save-pickle         Use to save comment data to a pickle
+  --load-pickle         Use to load comment data to a pickle
+  --subreddits SUBREDDITS [SUBREDDITS ...]
+                        Which subreddits to parse for commments
+```
 
 ### Other / Old
 
