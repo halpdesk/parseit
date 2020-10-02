@@ -7,6 +7,7 @@ from modules.reddit import get_subreddits
 from modules.tfidf_custom import TfIdfCustom
 from modules.tfidf import TfIdf
 from modules.word_stats import WordStats
+from modules.classifiers.knn import Knn
 import os
 import sys
 import argparse
@@ -110,7 +111,7 @@ df = pd.DataFrame(data={
     "label": [item["score"] for item in document],
 })
 
-
+# TODO: add another pickle here so we do not need to transform every time
 
 word_stats = WordStats()
 df = word_stats.measure(df)
@@ -119,6 +120,18 @@ tfidf_custom = TfIdfCustom()
 df = tfidf_custom.measure(df)
 
 print(df)
+
+feature_list_to_classify = [
+    "words_count",
+    "stop_words_count",
+    "bad_words_count",
+    "bad_words",
+    "tfidf_custom_score",
+]
+
+knn = Knn(df=df, split=100, feature_list=feature_list_to_classify, n_neighbors=3)
+print(knn)
+
 
 # Mark with features
 
