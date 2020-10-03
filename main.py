@@ -108,7 +108,7 @@ df = pd.DataFrame(data={
     "stop_words_count": [item["features"]["stop_words_count"] for item in document],
     "bad_words_count": [item["features"]["bad_words_count"] for item in document],
     "bad_words": [item["features"]["bad_words"] for item in document],
-    "label": [item["score"] for item in document],
+    "score": [item["score"] for item in document],
 })
 
 # TODO: add another pickle here so we do not need to transform every time
@@ -125,11 +125,10 @@ feature_list_to_classify = [
     "words_count",
     "stop_words_count",
     "bad_words_count",
-    "bad_words",
     "tfidf_custom_score",
 ]
 
-knn = Knn(df=df, split=100, feature_list=feature_list_to_classify, n_neighbors=3)
+knn = Knn(df=df, split=0.9, feature_list=feature_list_to_classify, n_neighbors_max=26)
 print(knn)
 
 
