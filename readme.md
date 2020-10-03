@@ -13,15 +13,16 @@ grammatics, sociolinguistics, language technology.
 
 This project aims to scrape a set of chosen subreddits and parse the content (mainly comments) in a linguistic context for statistical analysis. It is specifically written for a university project, and might not be maintained when the first version of this program (considered an MVP, that is when it fully satisfies that project) is reached.
 
-_Do we communicate in order to state truths or do we speak truths (occasionally) so we can communicate? (Cherpas, 139)_
+_Do we communicate in order to state truths or do we speak truths (occasionally) so we can communicate? (Cherpas)_
 
 ### Revision history
 
-| Revision   | Comment                          | Author          |
-|------------|----------------------------------|-----------------|
-| 2020-09-16 | First version - Introduction     | Daniel Leppänen |
-| 2020-09-20 | Project, features list and links | Daniel Leppänen |
-| 2020-09-24 | Install and run                  | Daniel Leppänen |
+| Revision   | Comment                                    | Author          |
+|------------|--------------------------------------------|-----------------|
+| 2020-09-16 | First version - Introduction               | Daniel Leppänen |
+| 2020-09-20 | Project, features list and links           | Daniel Leppänen |
+| 2020-09-24 | Install and run                            | Daniel Leppänen |
+| 2020-10-03 | More notes and links/meeting session notes | Daniel Leppänen |
 
 ## Project
 
@@ -62,11 +63,21 @@ A pickle is used to store all reddit data after first run. SKLearn is used to cl
 
 - Hatzivassiloglou, V & Klavans, J L & Eskin, E (1999), Detecting Text Similarity over Short Passages: Exploring Linguistic Feature Combinations via Machine Learning
 - William Croft (1994) Semantic universals in classifier systems, Word, 45:2, 145-171, DOI: 10.1080/00437956.1994.11435922
-- 10000 most common words in english (https://github.com/first20hours/google-10000-english or https://www.kaggle.com/rtatman/english-word-frequency)
 - Muresan, S & Tzoukermann, E & Klavans, J L (), Combining Linguistic and Machine Learning Techniques for Email Summarization
-- Cherpas, C (1992). Natural language processing, pragmatics, and verbal behavior. Analysis Verbal Behav 10, 135–147. https://doi.org/10.1007/BF03392880 (Hämtad 2020-02-12)
+- Cherpas, C (1992). Natural language processing, pragmatics, and verbal behavior. Analysis Verbal Behav 10, 135–147. https://doi.org/10.1007/BF03392880 (Fetched 2020-02-12)
 
-#### Links
+#### Other links
+
+- NLTK - Learning to classify text: https://www.nltk.org/book/ch06.html
+- 10000 most common words in english (https://github.com/first20hours/google-10000-english or https://www.kaggle.com/rtatman/english-word-frequency)
+- KNN example with sklearn: https://towardsdatascience.com/knn-using-scikit-learn-c6bed765be75#:~:text=KNN%20(K%2DNearest%20Neighbor),hence%20it%20is%20non%2Dparametric
+- older KNN example: https://www.datacamp.com/community/tutorials/k-nearest-neighbor-classification-scikit-learn
+
+Uncategorized:
+
+- Also check https://catboost.ai/ (categories like for tempuses)
+- https://www.kaggle.com/bittlingmayer/amazonreviews/notebooks
+- https://www.kaggle.com/fabiendaniel/customer-segmentation
 
 ##### POS
 
@@ -151,7 +162,7 @@ Here is a list of command line arguments.
 - What constitutes a "good" good and a "bad" content?
     Content might need to be classified and rate of new content might need to be learned
 
-### From meeting seesions
+### Notes from meeting seesion 2020-09-29
 
 - Check research and find text features
 - Build text feature data from text, let the upvotes be the variable to predict (y)
@@ -163,17 +174,14 @@ Here is a list of command line arguments.
   https://scikit-optimize.github.io/stable/auto_examples/bayesian-optimization.html#sphx-glr-auto-examples-bayesian-optimization-py
 - Score the test data and see if the regression learned anything
 - Output the feature relevance for the score
-```python
-# Let's have a look at the feature importance
-fi = pd.DataFrame(data={"Feature": X.columns, "Importance": clf.feature_importances_ * 100, "Std": 100 * np.std([tree.feature_importances_ for tree in clf.estimators_], axis=0)})
-sns.barplot(x='Importance', y='Feature', color='gray',
-            data=fi.sort_values("Importance", ascending=False),
-            **{'xerr':fi["Std"], 'ecolor': '#333333'})
-plt.title('Feature importance \n')
-plt.xlabel('Importance (%)')
-plt.ylabel('Feature')
-```
-- Also check https://catboost.ai/ (categories like for tempuses)
 
-- https://www.kaggle.com/bittlingmayer/amazonreviews/notebooks
-- https://www.kaggle.com/fabiendaniel/customer-segmentation
+  ```python
+  # Let's have a look at the feature importance
+  fi = pd.DataFrame(data={"Feature": X.columns, "Importance": clf.feature_importances_ * 100, "Std": 100 * np.std([tree.feature_importances_ for tree in clf.estimators_], axis=0)})
+  sns.barplot(x='Importance', y='Feature', color='gray',
+              data=fi.sort_values("Importance", ascending=False),
+              **{'xerr':fi["Std"], 'ecolor': '#333333'})
+  plt.title('Feature importance \n')
+  plt.xlabel('Importance (%)')
+  plt.ylabel('Feature')
+  ```
