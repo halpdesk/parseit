@@ -10,18 +10,24 @@ reddit = praw.Reddit(
 
 
 def get_subreddits(subreddits, number_of_submissions):
-    i = 0
-    progress_bar(i, number_of_submissions*len(subreddits), prefix='Getting comments:', suffix='Complete', length=50)
+    print(f"Fetching comments from {len(subreddits)} subreddits, {number_of_submissions} submissions from each...")
     data = []
     for name in subreddits:
+        comment_count = 0
+        i = 0
+        progress_bar(i, number_of_submissions, prefix=f"{str(name).rjust(24, ' ')}:", suffix=f"Complete ({comment_count} comments in {i} submissions)", length=100)
         subreddit = reddit.subreddit(name)
         subreddit.submissions = []
-        for submission in subreddit.hot(limit=number_of_submissions):
+        submissions = subreddit.top("month")
+        for submission in submissions:
+            if i > number_of_submissions:
+                continue
             submission.comments.list()
-            # todo: don't add submissions with 0 comments
             submission.comments.replace_more(limit=0)
-            progress_bar(i+1, number_of_submissions*len(subreddits), prefix='Getting comments:', suffix='Complete', length=50)
-            i = i+1
+            comment_count = comment_count + len(submission.comments)
             subreddit.submissions.append(submission)
+            progress_bar(i, number_of_submissions, prefix=f"{str(name).rjust(24, ' ')}:", suffix=f"Complete ({comment_count} comments in {i} submissions)", length=100)
+            i = i+1
         data.append(subreddit)
+        print("")
     return data

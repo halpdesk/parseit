@@ -135,7 +135,7 @@ Use POS to decide activum/passivum?
 > Note: It will return "No data loaded", because data must be loaded with --fetch-fresh or with --load-pickle command line arguments.
 
 **To fetch reddit data again, run:**
-`python main.py --fetch-fresh --save--pickle --subreddits=science,todayilearned,dataisbeautiful --number-of-submissions=100`
+`python main.py --fetch-fresh --save-pickle --subreddits science todayilearned dataisbeautiful --submissions 100`
 > This command will create a new pickle file in the current directory called _comments.p_.
 
 **To use earlier fetched reddit data:**

@@ -116,7 +116,7 @@ class TfIdfCustom:
             for word, score in f_table.items():
                 total_score_per_message += score
 
-            message_score[sent] = total_score_per_message / count_words_in_message
+            message_score[sent] = total_score_per_message / count_words_in_message if count_words_in_message != 0 else 0
 
         return message_score
 

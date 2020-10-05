@@ -27,43 +27,48 @@ By Daniel Leppänen.
 """
 
 default_subreddits = [
-    # "Coronavirus",
-    # "dataisbeautiful",
-    # "explainlikeimfive",
+    "askreddit",
     "science",
+    "worldnews",
     "todayilearned",
-    # "Awwducational",
+    "news",
+    "askscience",
+    "explainlikeimfive",
+    # "dataisbeautiful",
 ]
 
 parser = argparse.ArgumentParser(prog="python3.8 main.py", description=description, epilog=epilog)
-parser.add_argument("--fetch-fresh", dest="fetch_fresh", action="store_true", default=False, help="Use to fetch new comments")
+parser.add_argument("--fetch-fresh", dest="use_reddit", action="store_true", default=False, help="Use to fetch new comments")
 parser.add_argument("--save-pickle", dest="save_pickle", action="store_true", default=False, help="Use to save comment data to a pickle")
 parser.add_argument("--load-pickle", dest="load_pickle", action="store_true", default=False, help="Use to load comment data to a pickle")
 parser.add_argument("--subreddits",  dest="subreddits", nargs="+", default=default_subreddits, help="Which subreddits to parse for commments")
-parser.add_argument("--submissions", dest="submissions", default=10, type=int, help="How many submissions to fetch for each subreddit")
+parser.add_argument("--submissions", dest="submissions", nargs="?", default=100, type=int, help="How many submissions to fetch for each subreddit")
 arguments = vars(parser.parse_args())
+
 
 fetch_fresh = arguments.get("use_reddit", False)
 load_picle = arguments.get("load_pickle", False)
 save_pickle = arguments.get("save_pickle", False)
-number_of_submissions = arguments.get("submissions", 10)
+number_of_submissions = arguments.get("submissions", 100)
 subreddits = arguments.get("subreddits", default_subreddits)
 
 data = []
 
 if load_picle:
     data = pickle.load(open("comments.p", "rb"))
+    print("Pickle loaded.")
 
 if fetch_fresh:
     data = get_subreddits(subreddits, number_of_submissions)
 
 if save_pickle:
     pickle.dump(data, open("comments.p", "wb"))
+    print_subreddits_overview(data, only_outlier_comments=False)
+    sys.exit("Pickle saved.")
 
 if len(data) == 0:
     sys.exit("No data loaded.")
 
-# print_subreddits_overview(data, only_outlier_comments=True)
 
 # re-order do message-document format
 # document = several (messagag =
