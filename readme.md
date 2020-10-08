@@ -185,3 +185,9 @@ Here is a list of command line arguments.
   plt.xlabel('Importance (%)')
   plt.ylabel('Feature')
   ```
+
+### Notes from meeting seesion 2020-10-08
+
+- Try regression or otherwise bin/chunk labels
+  - MSE on scoring (0 = good)
+- Use transformers / scalers on labels (not Standard: because gaussian and labels are not normal distributed(?), maybe MinMax)

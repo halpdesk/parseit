@@ -8,10 +8,11 @@ from modules.tfidf_custom import TfIdfCustom
 from modules.tfidf import TfIdf
 from modules.word_stats import WordStats
 from modules.classifiers.knn import Knn
-import os
+from scipy.stats import binned_statistic
 import sys
 import argparse
 import pandas as pd
+import numpy as np
 
 ## Command line usage and arg parsing
 
@@ -54,6 +55,13 @@ subreddits = arguments.get("subreddits", default_subreddits)
 
 data = []
 
+# data = np.random.rand(1000)
+# bins = binned_statistic(data, data, bins=3, range=[0,10])
+# print(bins)
+# print(bins[0])
+# exit("Exited.")
+
+
 if load_picle:
     data = pickle.load(open("comments.p", "rb"))
     print("Pickle loaded.")
@@ -68,6 +76,10 @@ if save_pickle:
 
 if len(data) == 0:
     sys.exit("No data loaded.")
+
+
+# print_subreddits_overview(data, only_outlier_comments=False)
+# exit("Exited.")
 
 
 # re-order do message-document format
@@ -105,6 +117,12 @@ for subreddit in data:
                 }
             })
 
+scores = [item["score"] for item in document]
+# DON'T bin labels on regression
+# print(scores)
+# bins = binned_statistic(score, score, bins=2, range=[0,1])
+# bins = binned_statistic(scores, scores, range=[-10, 0,100,1000])
+
 
 df = pd.DataFrame(data={
     "body": [item["body"] for item in document],
@@ -113,7 +131,7 @@ df = pd.DataFrame(data={
     "stop_words_count": [item["features"]["stop_words_count"] for item in document],
     "bad_words_count": [item["features"]["bad_words_count"] for item in document],
     "bad_words": [item["features"]["bad_words"] for item in document],
-    "score": [item["score"] for item in document],
+    "score": scores,
 })
 
 # TODO: add another pickle here so we do not need to transform every time
@@ -125,6 +143,8 @@ tfidf_custom = TfIdfCustom()
 df = tfidf_custom.measure(df)
 
 print(df)
+
+# exit("Exited.")
 
 feature_list_to_classify = [
     "words_count",
