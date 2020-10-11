@@ -1,15 +1,13 @@
-
+import matplotlib.pyplot as plt
 from modules.tfidf_custom import TfIdfCustom
 from modules.tfidf import TfIdf
 from modules.word_stats import WordStats
 from modules.classifiers.knn import Knn
-from modules.data import fetch_fresh, load_pickle, save_pickle, create_df_from_reddit_data
+from modules.data import fetch_fresh, load_pickle, save_pickle
+from modules.stats import score_distribution_plot, words_count_plot, tfidf_custom_score_plot
 # from scipy.stats import binned_statistic
 import sys
 import argparse
-import pandas as pd
-import numpy as np
-
 ## Command line usage and arg parsing
 
 description="""
@@ -35,7 +33,7 @@ default_subreddits = [
 ]
 
 parser = argparse.ArgumentParser(prog="python3.8 main.py", description=description, epilog=epilog)
-parser.add_argument("--fetch-fresh", dest="use_reddit", action="store_true", default=False, help="Use to fetch new comments")
+parser.add_argument("--fetch-fresh", dest="fetch_fresh", action="store_true", default=False, help="Use to fetch new comments")
 parser.add_argument("--save-pickle", dest="save_pickle", nargs="?", type=str, help="Use to save comment data to a pickle")
 parser.add_argument("--load-pickle", dest="load_pickle", nargs="?", type=str, help="Use to load comment data to a pickle")
 parser.add_argument("--subreddits",  dest="subreddits", nargs="+", default=default_subreddits, help="Which subreddits to parse for commments")
@@ -50,25 +48,19 @@ arg_subreddits = arguments.get("subreddits", default_subreddits)
 
 if arg_load_pickle:
     df = load_pickle(arg_load_pickle)
-    # df = create_df_from_reddit_data(data)
-    sys.exit("Pickle loaded.")
     print("Pickle loaded.")
-
 elif arg_fetch_fresh:
     df = fetch_fresh(arg_subreddits, arg_number_of_submissions)
     print("Data fetched from subreddits.")
-
 try:
     df = df
 except NameError:
     sys.exit("No data loaded.")
-
 if arg_save_pickle:
     save_pickle(df, arg_save_pickle)
     sys.exit("Pickle saved.")
 
 
-# ANALYSIS:
 
 # scores = [item["score"] for item in document]
 # DON'T bin labels on regression
@@ -90,13 +82,22 @@ df = tfidf_custom.measure(df)
 
 print(df[[
     "tfidf_custom_score",
-    "words_count"
-    "stop_words_count"
-    "bad_words_count"
-    "bad_words"
+    "words_count",
+    "stop_words_count",
+    "bad_words_count",
+    "bad_words",
+    "label",
 ]])
 
-exit("Exited.")
+
+# ANALYSIS:
+
+# score_distribution_plot(df)
+# words_count_plot(df)
+# tfidf_custom_score_plot(df)
+# plt.show()
+
+# exit("Exited.")
 
 feature_list_to_classify = [
     "words_count",

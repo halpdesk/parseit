@@ -1,6 +1,6 @@
-import seaborn as sns
 import pandas as pd
 import matplotlib.pyplot as plt
+import seaborn as sns
 from sklearn import preprocessing
 from sklearn.neighbors import KNeighborsClassifier, KNeighborsRegressor
 from sklearn.model_selection import train_test_split
@@ -36,7 +36,7 @@ class Knn:
 
     def __init__(self, df, split, feature_list=[], n_neighbors_max=26):
 
-        y = df.pop('score')
+        y = df.pop('label')
         X = df[feature_list]
 
         X_train, X_valid, y_train, y_valid = train_test_split(X, y, test_size=split, random_state=2)
