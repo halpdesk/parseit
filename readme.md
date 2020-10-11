@@ -132,24 +132,26 @@ Use POS to decide activum/passivum?
 **Run program:**
 `python main.py`
 
-> Note: It will return "No data loaded", because data must be loaded with --fetch-fresh or with --load-pickle command line arguments.
+> Note: It will return "No data loaded", because data must be loaded with --fetch-fresh or with --load-pickle [PICKLE FILE] command line arguments.
 
 **To fetch reddit data again, run:**
-`python main.py --fetch-fresh --save-pickle --subreddits science todayilearned dataisbeautiful --submissions 100`
+`python main.py --fetch-fresh --save-pickle comments.p --subreddits science todayilearned dataisbeautiful --submissions 100`
 > This command will create a new pickle file in the current directory called _comments.p_.
 
-**To use earlier fetched reddit data:**
-`python main.py --load-pickle`
+**To use earlierfetched reddit data:**
+`python main.py --load-pickle comments.p `
+> This command will load data from a pickle file called _comments.p_.
 
 Here is a list of command line arguments.
 
 ```bash
-  -h, --help            show this help message and exit
-  --fetch-fresh         Use to fetch new comments
-  --save-pickle         Use to save comment data to a pickle
-  --load-pickle         Use to load comment data to a pickle
-  --subreddits SUBREDDITS [SUBREDDITS ...]
-                        Which subreddits to parse for commments
+optional arguments:
+  -h, --help                                show this help message and exit
+  --fetch-fresh                             Use to fetch new comments
+  --save-pickle [SAVE_PICKLE]               Use to save comment data to a pickle
+  --load-pickle [LOAD_PICKLE]               Use to load comment data to a pickle
+  --subreddits SUBREDDITS [SUBREDDITS ...]  Which subreddits to parse for commments
+  --submissions [SUBMISSIONS]               How many submissions to fetch for each subreddit
 ```
 
 ### Other / Old
