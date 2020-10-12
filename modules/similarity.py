@@ -40,8 +40,6 @@ class Similarity:
             submission_df["topic_similarity"] = similarity_scores
             # print(f"-- {submission_df[['body', 'submission', 'topic_similarity']]}") # SEEMS TO WORK WELL!
 
-            df.update(submission_df)
-            # for index,row in submission_df.iterrows():
-            #     df.at[row.iloc, "topic_similarity"] = row["topic_similarity"]
+            df.update(submission_df) # updates all indexes in place
 
         return df

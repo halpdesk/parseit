@@ -15,3 +15,9 @@ def tfidf_custom_score_plot(df):
         kind="reg", truncate=False,
         # xlim=(0, 60), ylim=(0, 12),
         color="m", height=7)
+
+def topic_similarity_score_plot(df):
+    g = sns.jointplot(x="topic_similarity", y="label", data=df[["topic_similarity", "label"]],
+        kind="reg", truncate=False,
+        # xlim=(0, 60), ylim=(0, 12),
+        color="m", height=7)

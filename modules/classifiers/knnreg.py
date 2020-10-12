@@ -10,7 +10,7 @@ from math import sqrt
 from sklearn.preprocessing import MinMaxScaler, StandardScaler
 
 
-class Knn:
+class KnnReg:
 
     # def __init__(self, df, split, feature_list=[], n_neighbors=3):
     #
@@ -40,7 +40,6 @@ class Knn:
         X = df[feature_list]
 
         X_train, X_valid, y_train, y_valid = train_test_split(X, y, test_size=split, random_state=2)
-
 
 
         # https://scikit-learn.org/stable/modules/preprocessing.html#preprocessing-scaler

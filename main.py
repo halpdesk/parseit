@@ -3,9 +3,9 @@ from modules.tfidf_custom import TfIdfCustom
 from modules.tfidf import TfIdf
 from modules.word_stats import WordStats
 from modules.similarity import Similarity
-from modules.classifiers.knn import Knn
+from modules.classifiers.knnreg import KnnReg
 from modules.data import fetch_fresh, load_pickle, save_pickle
-from modules.stats import score_distribution_plot, words_count_plot, tfidf_custom_score_plot
+from modules.stats import score_distribution_plot, words_count_plot, tfidf_custom_score_plot, topic_similarity_score_plot
 # from scipy.stats import binned_statistic
 import sys
 import argparse
@@ -75,8 +75,8 @@ if arg_save_pickle:
 similarity = Similarity()
 similarity.score(df) # "topic_similarity"
 
-word_stats = WordStats()
-df = word_stats.score(df) # "words_count", "stop_words_count", "bad_words_count", "bad_words"
+# word_stats = WordStats()
+# df = word_stats.score(df) # "words_count", "stop_words_count", "bad_words_count", "bad_words"
 
 # tfidf_custom = TfIdfCustom()
 # df = tfidf_custom.score(df) # "tfidf_custom_score"
@@ -84,15 +84,15 @@ df = word_stats.score(df) # "words_count", "stop_words_count", "bad_words_count"
 # tfidf = TfIdf()
 # tfidf.score(df) # "tf_idf"
 
-print(df[[
-    # "tfidf_custom_score",
-    "words_count",
-    "stop_words_count",
-    "bad_words_count",
-    "bad_words",
-    "topic_similarity",
-    "label",
-]])
+# print(df[[
+#     # "tfidf_custom_score",
+#     "words_count",
+#     "stop_words_count",
+#     "bad_words_count",
+#     "bad_words",
+#     "topic_similarity",
+#     "label",
+# ]])
 
 
 # ANALYSIS:
@@ -100,16 +100,18 @@ print(df[[
 # score_distribution_plot(df)
 # words_count_plot(df)
 # tfidf_custom_score_plot(df)
-# plt.show()
+topic_similarity_score_plot(df)
+plt.show()
 
-# exit("Exited.")
+exit("Exited.")
 
-# feature_list_to_classify = [
-#     "words_count",
-#     "stop_words_count",
-#     "bad_words_count",
-#     "tfidf_custom_score",
-# ]
+feature_list_to_classify = [
+    "tfidf_custom_score",
+    "words_count",
+    "stop_words_count",
+    "bad_words_count",
+    "topic_similarity",
+]
 
-# knn = Knn(df=df, split=0.9, feature_list=feature_list_to_classify, n_neighbors_max=26)
-# print(knn)
+knnreg = KnnReg(df=df, split=0.9, feature_list=feature_list_to_classify, n_neighbors_max=26)
+print(knnreg)
