@@ -3,7 +3,7 @@ from modules.tfidf_custom import TfIdfCustom
 from modules.tfidf import TfIdf
 from modules.word_stats import WordStats
 from modules.similarity import Similarity
-from modules.classifiers.knnreg import KnnReg
+from models.knnreg import KnnReg
 from modules.data import fetch_fresh, load_pickle, save_pickle
 from modules.stats import score_distribution_plot, words_count_plot, tfidf_custom_score_plot, topic_similarity_score_plot
 # from scipy.stats import binned_statistic
