@@ -5,7 +5,7 @@ import pandas as pd
 class TfIdf:
 
     def __init__(self):
-        stop_words = set(stopwords.words("english"))
+        # stop_words = set(stopwords.words("english"))
         self.vectorizer = TfidfVectorizer(**{
             "min_df":1,
             # "max_df":2,
@@ -14,14 +14,16 @@ class TfIdf:
             "ngram_range":(1,2)
         })
 
-    def measure(self, document):
-        messages = [item["body"] for item in document]
-        tfidf = self.vectorizer.fit_transform(messages)
+    def measure(self, df):
+        messages = df.get("body")
+
+        vectors = self.vectorizer.fit_transform(messages)
+        feature_names = self.vectorizer.get_feature_names()
+        dense = vectors.todense()
+        denselist = dense.tolist()
 
         pairwise_similarity = tfidf * tfidf.T
 
-        dense = tfidf.todense()
-        denselist = dense.tolist()
         df = pd.DataFrame(denselist)
         with pd.option_context('display.max_rows', None, 'display.max_columns', None):  # more options can be specified also
             print(df)

@@ -2,6 +2,7 @@ import matplotlib.pyplot as plt
 from modules.tfidf_custom import TfIdfCustom
 from modules.tfidf import TfIdf
 from modules.word_stats import WordStats
+from modules.similarity import Similarity
 from modules.classifiers.knn import Knn
 from modules.data import fetch_fresh, load_pickle, save_pickle
 from modules.stats import score_distribution_plot, words_count_plot, tfidf_custom_score_plot
@@ -71,21 +72,25 @@ if arg_save_pickle:
 
 # FEATURES:
 
-word_stats = WordStats()
-df = word_stats.measure(df)
+similarity = Similarity()
+similarity.score(df) # "topic_similarity"
 
-tfidf_custom = TfIdfCustom()
-df = tfidf_custom.measure(df)
+word_stats = WordStats()
+df = word_stats.score(df) # "words_count", "stop_words_count", "bad_words_count", "bad_words"
+
+# tfidf_custom = TfIdfCustom()
+# df = tfidf_custom.score(df) # "tfidf_custom_score"
 
 # tfidf = TfIdf()
-# tfidf.measure(document)
+# tfidf.score(df) # "tf_idf"
 
 print(df[[
-    "tfidf_custom_score",
+    # "tfidf_custom_score",
     "words_count",
     "stop_words_count",
     "bad_words_count",
     "bad_words",
+    "topic_similarity",
     "label",
 ]])
 
@@ -99,12 +104,12 @@ print(df[[
 
 # exit("Exited.")
 
-feature_list_to_classify = [
-    "words_count",
-    "stop_words_count",
-    "bad_words_count",
-    "tfidf_custom_score",
-]
+# feature_list_to_classify = [
+#     "words_count",
+#     "stop_words_count",
+#     "bad_words_count",
+#     "tfidf_custom_score",
+# ]
 
-knn = Knn(df=df, split=0.9, feature_list=feature_list_to_classify, n_neighbors_max=26)
-print(knn)
+# knn = Knn(df=df, split=0.9, feature_list=feature_list_to_classify, n_neighbors_max=26)
+# print(knn)

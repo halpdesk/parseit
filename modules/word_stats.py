@@ -61,7 +61,7 @@ class WordStats:
 
         return words_count_list, stop_words_count_list, bad_words_count_list, bad_words_list
 
-    def measure(self, df):
+    def score(self, df):
 
         # messages = [item["body"] for item in document]
         messages = df.get("body")

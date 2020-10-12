@@ -146,7 +146,7 @@ class TfIdfCustom:
 
         return summary
 
-    def measure(self, df):
+    def score(self, df):
         # messages = [item["body"] for item in document]
         # total_documents = len(document)
         messages = df.get("body")
