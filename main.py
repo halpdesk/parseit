@@ -75,11 +75,13 @@ if arg_save_pickle:
 similarity = Similarity()
 similarity.score(df) # "topic_similarity"
 
-# word_stats = WordStats()
-# df = word_stats.score(df) # "words_count", "stop_words_count", "bad_words_count", "bad_words"
+word_stats = WordStats()
+df = word_stats.score(df) # "words_count", "stop_words_count", "bad_words_count", "bad_words"
 
-# tfidf_custom = TfIdfCustom()
-# df = tfidf_custom.score(df) # "tfidf_custom_score"
+tfidf_custom = TfIdfCustom()
+df = tfidf_custom.score(df) # "tfidf_custom_score"
+
+print(df[["body", "submission", "topic_similarity", "tfidf_score", "words_count", "stop_words_count", "bad_words_count", "bad_words", "label"]])
 
 # tfidf = TfIdf()
 # tfidf.score(df) # "tf_idf"
@@ -100,18 +102,18 @@ similarity.score(df) # "topic_similarity"
 # score_distribution_plot(df)
 # words_count_plot(df)
 # tfidf_custom_score_plot(df)
-topic_similarity_score_plot(df)
-plt.show()
+# topic_similarity_score_plot(df)
+# plt.show()
 
-exit("Exited.")
+# exit("Exited.")
 
-feature_list_to_classify = [
-    "tfidf_custom_score",
-    "words_count",
-    "stop_words_count",
-    "bad_words_count",
-    "topic_similarity",
-]
+# feature_list_to_classify = [
+#     "tfidf_custom_score",
+#     "words_count",
+#     "stop_words_count",
+#     "bad_words_count",
+#     "topic_similarity",
+# ]
 
-knnreg = KnnReg(df=df, split=0.9, feature_list=feature_list_to_classify, n_neighbors_max=26)
-print(knnreg)
+# knnreg = KnnReg(df=df, split=0.9, feature_list=feature_list_to_classify, n_neighbors_max=26)
+# print(knnreg)
