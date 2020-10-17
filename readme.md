@@ -164,7 +164,7 @@ optional arguments:
 - What constitutes a "good" good and a "bad" content?
     Content might need to be classified and rate of new content might need to be learned
 
-### Notes from meeting seesion 2020-09-29
+### Notes from session 2020-09-29
 
 - Check research and find text features
 - Build text feature data from text, let the upvotes be the variable to predict (y)
@@ -188,8 +188,16 @@ optional arguments:
   plt.ylabel('Feature')
   ```
 
-### Notes from meeting seesion 2020-10-08
+### Notes from session 2020-10-08
 
 - Try regression or otherwise bin/chunk labels
   - MSE on scoring (0 = good)
 - Use transformers / scalers on labels (not Standard: because gaussian and labels are not normal distributed(?), maybe MinMax)
+
+### Notes from session 2020-10-17
+
+- Always check user guide: https://scikit-learn.org/stable/user_guide.html
+- Needs scaling?: https://stats.stackexchange.com/questions/244507/what-algorithms-need-feature-scaling-beside-from-svm
+- Feature scaling: https://sebastianraschka.com/Articles/2014_about_feature_scaling.html
+- Preprocessing and scaling: https://scikit-learn.org/stable/modules/preprocessing.html
+- Preprocessing api list: https://scikit-learn.org/stable/modules/classes.html#module-sklearn.preprocessing
