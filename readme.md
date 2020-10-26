@@ -201,3 +201,9 @@ optional arguments:
 - Feature scaling: https://sebastianraschka.com/Articles/2014_about_feature_scaling.html
 - Preprocessing and scaling: https://scikit-learn.org/stable/modules/preprocessing.html
 - Preprocessing api list: https://scikit-learn.org/stable/modules/classes.html#module-sklearn.preprocessing
+
+### Notes from session 2020-10-26
+
+- Skewed data - use StratifiedKFold
+- Drop off skeded data so that we have similar sizes from all bins?
+- Normalize bag of words features [0-1]
