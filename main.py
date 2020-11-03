@@ -69,19 +69,14 @@ if arg_save_pickle:
 
 # FEATURES:
 
-bigram_of_words = BigramOfWords()
-df = bigram_of_words.score(df)
-
-df = df.drop([
-    "topic_similarity", "tfidf_score", "words_count", "stop_words_count", "bad_words_count", "bad_words",
-    "reichenbach_tense", "emoticons", "aspectual_class", "common_word", "letter_count", "tfidf_custom_score", "length", "sentences"], axis="columns")
-print(df)
+#bigram_of_words = BigramOfWords()
+#df = bigram_of_words.score(df)
 
 # bag_of_words = BagOfWords()
 # df = bag_of_words.score(df)
 
 #similarity = Similarity()
-#df = similarity.score(df) # "topic_similarity"
+#similarity.score(df) # "topic_similarity"
 
 #word_stats = WordStats()
 #df = word_stats.score(df) # "words_count", "stop_words_count", "bad_words_count", "bad_words"
@@ -92,7 +87,13 @@ print(df)
 # tfidf = TfIdf()
 # tfidf.score(df) # "tf_idf"
 
-#print(df[["body", "submission", "topic_similarity", "tfidf_score", "words_count", "stop_words_count", "bad_words_count", "bad_words", "label"]])
+df = df.drop([
+    "topic_similarity", "words_count",
+    "bigram_of_words", "tfidf_score",
+    "stop_words_count", "bad_words_count", "bad_words",
+    "reichenbach_tense", "emoticons", "aspectual_class", "common_word", "letter_count", "tfidf_custom_score", "length", "sentences"
+], axis="columns")
+print(df)
 
 
 
