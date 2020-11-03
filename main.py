@@ -1,3 +1,5 @@
+from modules.bag_of_words import BagOfWords
+from modules.bigram_of_words import BigramOfWords
 import matplotlib.pyplot as plt
 from modules.tfidf_custom import TfIdfCustom
 from modules.tfidf import TfIdf
@@ -63,38 +65,35 @@ if arg_save_pickle:
 
 
 
-# scores = [item["score"] for item in document]
-# DON'T bin labels on regression
-# print(scores)
-# bins = binned_statistic(score, score, bins=2, range=[0,1])
-# bins = binned_statistic(scores, scores, range=[-10, 0,100,1000])
 
 
 # FEATURES:
 
-similarity = Similarity()
-similarity.score(df) # "topic_similarity"
+bigram_of_words = BigramOfWords()
+df = bigram_of_words.score(df)
 
-word_stats = WordStats()
-df = word_stats.score(df) # "words_count", "stop_words_count", "bad_words_count", "bad_words"
+df = df.drop([
+    "topic_similarity", "tfidf_score", "words_count", "stop_words_count", "bad_words_count", "bad_words",
+    "reichenbach_tense", "emoticons", "aspectual_class", "common_word", "letter_count", "tfidf_custom_score", "length", "sentences"], axis="columns")
+print(df)
 
-tfidf_custom = TfIdfCustom()
-df = tfidf_custom.score(df) # "tfidf_custom_score"
+# bag_of_words = BagOfWords()
+# df = bag_of_words.score(df)
 
-print(df[["body", "submission", "topic_similarity", "tfidf_score", "words_count", "stop_words_count", "bad_words_count", "bad_words", "label"]])
+#similarity = Similarity()
+#df = similarity.score(df) # "topic_similarity"
+
+#word_stats = WordStats()
+#df = word_stats.score(df) # "words_count", "stop_words_count", "bad_words_count", "bad_words"
+
+#tfidf_custom = TfIdfCustom()
+#df = tfidf_custom.score(df) # "tfidf_custom_score"
 
 # tfidf = TfIdf()
 # tfidf.score(df) # "tf_idf"
 
-# print(df[[
-#     # "tfidf_custom_score",
-#     "words_count",
-#     "stop_words_count",
-#     "bad_words_count",
-#     "bad_words",
-#     "topic_similarity",
-#     "label",
-# ]])
+#print(df[["body", "submission", "topic_similarity", "tfidf_score", "words_count", "stop_words_count", "bad_words_count", "bad_words", "label"]])
+
 
 
 # ANALYSIS:
@@ -104,16 +103,3 @@ print(df[["body", "submission", "topic_similarity", "tfidf_score", "words_count"
 # tfidf_custom_score_plot(df)
 # topic_similarity_score_plot(df)
 # plt.show()
-
-# exit("Exited.")
-
-# feature_list_to_classify = [
-#     "tfidf_custom_score",
-#     "words_count",
-#     "stop_words_count",
-#     "bad_words_count",
-#     "topic_similarity",
-# ]
-
-# knnreg = KnnReg(df=df, split=0.9, feature_list=feature_list_to_classify, n_neighbors_max=26)
-# print(knnreg)
