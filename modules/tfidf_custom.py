@@ -120,7 +120,7 @@ class TfIdfCustom:
 
         return message_score
 
-    def _find_average_score(self, message_value) -> int:
+    def _find_average_score(self, message_value) -> float:
         """
         Find the average score from the sentence value dictionary
         :rtype: int

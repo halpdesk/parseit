@@ -1,44 +1,42 @@
-from nltk.stem import PorterStemmer
-from nltk.tokenize import word_tokenize
-from nltk.corpus import stopwords
-import heapq
+from functools import lru_cache
+from modules.helpers import lemmatize, tokenize, stopwords, badwords
+from functools import lru_cache
 
 class BagOfWords:
 
-    def __init__(self):
-        self.stop_words = set(stopwords.words("english"))
-        self.ps = PorterStemmer()
-
-    def _all_words(self, messages):
+    @staticmethod
+    @lru_cache
+    def all_words(messages):
         """ Uses stemmer for english """
+        stop_words = stopwords()
 
         all_words = []
         for i in range(len(messages)):
             msg = messages[i]
-            words = word_tokenize(msg)
-            for word in words:
-                word = self.ps.stem(word.lower())
-                if word not in self.stop_words:
-                    all_words.append(word)
+            for word,pos in tokenize(msg):
+                lemma = lemmatize(word, pos)
+                if lemma not in stop_words:
+                    all_words.append(lemma)
 
         return list(set(all_words))
 
-    def score(self, df):
+    @staticmethod
+    def score(df):
 
         # most_freq = heapq.nlargest(200, wordfreq, key=wordfreq.get)
-        ps = PorterStemmer()
         messages = df.get("body")
-        all_words = self._all_words(messages)
+        all_words = BagOfWords.all_words(messages)
+        stop_words = stopwords()
 
         bag_of_words_list = [[]] * len(messages)
         for i in range(len(messages)):
             sentence = messages[i]
-            tokens = word_tokenize(sentence)
+            words_tags = tokenize(sentence)
             vector = [0] * len(all_words)
-            for j in range(len(tokens)):
-                word = self.ps.stem(tokens[j].lower())
-                if word not in self.stop_words:
-                    index = all_words.index(word)
+            for j in range(len(words_tags)):
+                lemma = lemmatize(words_tags[j][0], words_tags[j][1])
+                if lemma not in stop_words:
+                    index = all_words.index(lemma)
                     vector[index] = vector[index] + 1
             bag_of_words_list[i] = vector
 

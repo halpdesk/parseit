@@ -1,9 +1,6 @@
-from sklearn.feature_extraction.text import TfidfVectorizer
-from nltk.stem import PorterStemmer
-from nltk.tokenize import sent_tokenize, word_tokenize
-from nltk.corpus import stopwords
-from functools import lru_cache
-import os
+from modules.helpers import lemmatize, tokenize, stopwords, badwords
+import pandas as pd
+import numpy as np
 
 # bad words from:
 # https://github.com/snguyenthanh/better_profanity/blob/master/better_profanity/profanity_wordlist.txt
@@ -11,71 +8,54 @@ import os
 
 class WordStats:
 
-    def __init__(self):
-        self.stop_words = set(stopwords.words("english"))
+    @staticmethod
+    def count_words(documents):
+        bad_words = badwords()
+        stop_words = stopwords()
 
-    @lru_cache
-    def _list_bad_words(self):
-        root_path = f"{os.path.dirname(os.path.realpath(__file__))}/.."
-        filename = f"{root_path}/datasets/bad-words.csv"
-        bad_words = []
-        with open(filename) as f:
-            for word in f:
-                bad_words.append(word[:-1])
-        # don't return the last empty line
-        result = bad_words[:-1]
-        return result
+        words_count_list = [0] * len(documents)
+        bad_words_count_list = [0] * len(documents)
+        bad_words_list = [[]] * len(documents)
+        stop_words_count_list = [0] * len(documents)
 
-    def _count_words(self, messages):
-        """ Uses stemmer for english """
-        bad_words_corp = self._list_bad_words()
-        words_count_list = [0] * len(messages)
-        bad_words_count_list = [0] * len(messages)
-        bad_words_list = [None] * len(messages)
-        stop_words_count_list = [0] * len(messages)
-        stop_words = set(stopwords.words("english"))
-        ps = PorterStemmer()
-
-        for i in range(len(messages)):
-            word_count = 0
-            stop_words_count = 0
-            bad_words_count = 0
-            bad_words = ""
-            msg = messages[i]
+        for i in range(len(documents)):
+            c_word_count = 0
+            c_stop_words_count = 0
+            c_bad_words_count = 0
+            c_bad_word = []
+            document = documents[i]
             freq_table = {}
-            words = word_tokenize(msg)
-            for word in words:
-                word = ps.stem(word.lower())
-                if word in bad_words_corp:
-                    bad_words_count = bad_words_count + 1
-                    bad_words = f"{bad_words},{word}"
-                if word in stop_words:
-                    stop_words_count = stop_words_count + 1
+            for word, tag in tokenize(document):
+                lemma = lemmatize(word, tag)
+                if word in bad_words or lemma in bad_words:
+                    c_bad_words_count = c_bad_words_count + 1
+                    c_bad_word.append(word)
+                if word in stop_words or lemma in stop_words:
+                    c_stop_words_count = c_stop_words_count + 1
                 else:
-                    word_count = word_count + 1
+                    c_word_count = c_word_count + 1
 
-            words_count_list[i] = word_count
-            stop_words_count_list[i] = stop_words_count
-            bad_words_count_list[i] = bad_words_count
-            bad_words_list[i] = bad_words[1:]
+            words_count_list[i] = c_word_count
+            stop_words_count_list[i] = c_stop_words_count
+            bad_words_count_list[i] = c_bad_words_count
+            bad_words_list[i] = c_bad_word[1:]
 
         return words_count_list, stop_words_count_list, bad_words_count_list, bad_words_list
 
-    def score(self, df):
+    @staticmethod
+    def score(df):
 
-        # messages = [item["body"] for item in document]
-        messages = df.get("body")
-        word_count_list, stop_words_count_list, bad_words_count_list, bad_words_list = self._count_words(messages)
+        documents = df.get("body")
+        word_count_list, stop_words_count_list, bad_words_count_list, bad_words_list = WordStats.count_words(documents)
 
-        # for i in range(len(df)):
-        #     df[i]["words_count"] = word_count_list[i]
-        #     df[i]["stop_words_count"] = stop_words_count_list[i]
-        #     df[i]["bad_words_count"] = bad_words_count_list[i]
-        #     df[i]["bad_words"] = bad_words_list[i]
+        records = np.array([word_count_list, stop_words_count_list, bad_words_count_list])
+        # print(records)
+        wc_dataframe = pd.DataFrame.from_records(data=records.T, columns=["word_count", "stop_words_count", "bad_words_count"])
 
-        df["words_count"] = word_count_list
-        df["stop_words_count"] = stop_words_count_list
-        df["bad_words_count"] = bad_words_count_list
-        df["bad_words"] = bad_words_list
+        df = pd.concat([df, wc_dataframe], axis=1, sort=False)
+        # df["words_count"] = word_count_list
+        # df["stop_words_count"] = stop_words_count_list
+        # df["bad_words_count"] = bad_words_count_list
+        # df["bad_words"] = bad_words_list
 
         return df
