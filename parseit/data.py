@@ -1,12 +1,13 @@
 import os
 import sys
-from modules.reddit import get_subreddit_comments
-from modules.printers import print_subreddits_overview
+from parseit.reddit import get_subreddit_comments
+from parseit.printers import print_subreddits_overview
 import pandas as pd
 import pickle
 
 def fetch_fresh(subreddits, number_of_submissions):
     reddit_data = get_subreddit_comments(subreddits, number_of_submissions)
+    print_subreddits_overview(reddit_data)
     df = create_df_from_reddit_data(reddit_data)
     return df
 

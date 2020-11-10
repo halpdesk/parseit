@@ -1,5 +1,5 @@
 import praw
-from modules.printers import progress_bar
+from parseit.printers import progress_bar
 
 reddit = praw.Reddit(
     client_id="0l1Xch2xeRe7Bw",

@@ -1,5 +1,5 @@
 import time
-from colored import fg, bg, attr
+from colored import fg, attr
 import pendulum
 import string
 

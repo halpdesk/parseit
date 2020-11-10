@@ -1,4 +1,5 @@
-from modules.data import fetch_fresh, load_pickle, save_pickle
+from parseit.data import fetch_fresh, load_pickle, save_pickle
+from parseit.printers import print_subreddits_overview
 import sys
 import argparse
 
@@ -12,6 +13,10 @@ epilog="""
 Written in oct 2020 for a private project in linguistics at Göteborg Universitet.
 By Daniel Leppänen.
 """
+
+# Example commands:
+# python main.py --fetch-fresh --save-pickle 10-nov.p --subreddits askreddit science --submissions 4
+# python main.py --fetch-fresh --load-pickle 10-nov.p
 
 default_subreddits = [
     "askreddit",
@@ -32,11 +37,11 @@ parser.add_argument("--subreddits",  dest="subreddits", nargs="+", default=defau
 parser.add_argument("--submissions", dest="submissions", nargs="?", default=100, type=int, help="How many submissions to fetch for each subreddit")
 arguments = vars(parser.parse_args())
 
-arg_fetch_fresh = arguments.get("fetch_fresh", False)
-arg_load_pickle = arguments.get("load_pickle", "comments.p")
-arg_save_pickle = arguments.get("save_pickle", "comments.p")
-arg_number_of_submissions = arguments.get("submissions", 100)
-arg_subreddits = arguments.get("subreddits", default_subreddits)
+arg_fetch_fresh = arguments.get("fetch_fresh")
+arg_load_pickle = arguments.get("load_pickle")
+arg_save_pickle = arguments.get("save_pickle")
+arg_number_of_submissions = arguments.get("submissions")
+arg_subreddits = arguments.get("subreddits")
 
 if arg_load_pickle:
     df = load_pickle(arg_load_pickle)
@@ -48,6 +53,9 @@ try:
     df = df
 except NameError:
     sys.exit("No data loaded.")
-if arg_save_pickle:
-    save_pickle(df, arg_save_pickle)
+if arg_save_pickle or arg_fetch_fresh:
+    save_pickle(df, arg_save_pickle or "comments.p")
     sys.exit("Pickle saved.")
+
+
+print(df)
