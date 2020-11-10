@@ -1,11 +1,8 @@
-from nltk.stem import WordNetLemmatizer
-from nltk import pos_tag, word_tokenize, sent_tokenize
-from nltk.corpus import stopwords
 from functools import lru_cache
-import re
-import os
 
 def lemmatize(word, tag):
+    from nltk.stem import WordNetLemmatizer
+
     l = WordNetLemmatizer()
     wordnet_tag = tag[0].lower()
     wordnet_tag = wordnet_tag if wordnet_tag in ["a", "s", "r", "n", "v"] else None # (another guide shows ['a', 'r', 'n', 'v'])
@@ -16,21 +13,30 @@ def lemmatize(word, tag):
     return str(lemma).lower()
 
 
-def tokenize(document, method="re", by="\W+"):
+def tokenize(document, method="nltk", by="word"):
+    from nltk import pos_tag, word_tokenize, sent_tokenize
+    import re
+
     if method == "nltk":
         words = word_tokenize(document) if by == "word" else sent_tokenize(document)
     else:
         words = re.split("\W+", document)
-    return pos_tag(words)
+
+    filtered_empty = [word for word in words if re.match("\w", word)]
+    return pos_tag(filtered_empty)
 
 
 @lru_cache
 def stopwords():
-    return set(stopwords.words("english"))
+    from nltk.corpus import stopwords as stop_words
+
+    return set(stop_words.words("english"))
 
 
 @lru_cache
 def badwords():
+    import os
+
     root_path = f"{os.path.dirname(os.path.realpath(__file__))}/.."
     filename = f"{root_path}/datasets/bad-words.csv"
     bad_words = []
@@ -46,6 +52,8 @@ def badwords():
 class LemmaTokenizer:
     ignore_tokens = [',', '.', ';', ':', '"', '``', "''", '`', '[removed]', '>', '*', '_']
     def __init__(self):
+        from nltk.stem import WordNetLemmatizer
         self.wnl = WordNetLemmatizer()
     def __call__(self, doc):
+        from nltk import word_tokenize
         return [self.wnl.lemmatize(t) for t in word_tokenize(doc) if t not in self.ignore_tokens]
