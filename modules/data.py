@@ -1,12 +1,12 @@
 import os
 import sys
-from modules.reddit import get_subreddits
+from modules.reddit import get_subreddit_comments
 from modules.printers import print_subreddits_overview
 import pandas as pd
 import pickle
 
 def fetch_fresh(subreddits, number_of_submissions):
-    reddit_data = get_subreddits(subreddits, number_of_submissions)
+    reddit_data = get_subreddit_comments(subreddits, number_of_submissions)
     df = create_df_from_reddit_data(reddit_data)
     return df
 
@@ -30,22 +30,6 @@ def create_df_from_reddit_data(reddit_data):
                     "body": comment.body,
                     "subreddit": subreddit.display_name,
                     "submission": submission.title,
-                    # "tf_matrix": [],
-                    # "idf_matrix": [],
-                    "tfidf_score": 0,
-                    "tfidf_custom_score": 0,
-                    "length": 0,
-                    "sentences": 0,
-                    "common_word": 0,
-                    "words_count": 0,
-                    "stop_words_count": 0,
-                    "bad_words_count": 0,
-                    "bad_words": "",
-                    "letter_count": 0,
-                    "emoticons": False,
-                    "aspectual_class": 0,
-                    "reichenbach_tense": 0,
-                    "topic_similarity": 0,
                     "label": comment.score,
                 }
                 i = i+1
