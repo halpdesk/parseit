@@ -9,7 +9,7 @@ reddit = praw.Reddit(
 # print(reddit.read_only)
 
 
-def get_subreddits(subreddits, number_of_submissions):
+def get_subreddit_comments(subreddits, number_of_submissions):
     print(f"Fetching comments from {len(subreddits)} subreddits, {number_of_submissions} submissions from each...")
     data = []
     for name in subreddits:
