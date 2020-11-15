@@ -18,8 +18,8 @@ def get_subreddit_comments(subreddits, number_of_submissions):
         progress_bar(i, number_of_submissions, prefix=f"{str(name).rjust(24, ' ')}:", suffix=f"Complete ({comment_count} comments in {i} submissions)", length=100)
         subreddit = reddit.subreddit(name)
         subreddit.submissions = []
-        submissions = subreddit.top("month")
-        for submission in submissions:
+        # submissions = subreddit.top("month")
+        for submission in subreddit.stream.submissions():
             if i > number_of_submissions:
                 continue
             submission.comments.list()
