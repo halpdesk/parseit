@@ -1,45 +1,49 @@
 from functools import lru_cache
-from modules.helpers import lemmatize, tokenize, stopwords, badwords
+from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
+from modules.helpers import LemmaTokenizer, stopwords
 from functools import lru_cache
+import pandas as pd
+import numpy as np
 
 class BagOfWords:
-
-    @staticmethod
-    @lru_cache
-    def all_words(messages):
-        """ Uses stemmer for english """
-        stop_words = stopwords()
-
-        all_words = []
-        for i in range(len(messages)):
-            msg = messages[i]
-            for word,pos in tokenize(msg):
-                lemma = lemmatize(word, pos)
-                if lemma not in stop_words:
-                    all_words.append(lemma)
-
-        return list(set(all_words))
 
     @staticmethod
     def score(df):
 
         # most_freq = heapq.nlargest(200, wordfreq, key=wordfreq.get)
         messages = df.get("body")
-        all_words = BagOfWords.all_words(messages)
+
+        # Lemmatize the stop words
+        tokenizer=LemmaTokenizer()
         stop_words = stopwords()
+        token_stop = tokenizer(' '.join(stop_words))
 
-        bag_of_words_list = [[]] * len(messages)
-        for i in range(len(messages)):
-            sentence = messages[i]
-            words_tags = tokenize(sentence)
-            vector = [0] * len(all_words)
-            for j in range(len(words_tags)):
-                lemma = lemmatize(words_tags[j][0], words_tags[j][1])
-                if lemma not in stop_words:
-                    index = all_words.index(lemma)
-                    vector[index] = vector[index] + 1
-            bag_of_words_list[i] = vector
+        count_vectorizer = CountVectorizer(stop_words=token_stop, tokenizer=tokenizer)
+        count_data = count_vectorizer.fit_transform(messages)
 
-        df["bag_of_words"] = bag_of_words_list
+        cv_dataframe = pd.DataFrame(count_data.toarray(),columns=count_vectorizer.get_feature_names())
+
+        df = pd.concat([df, cv_dataframe], axis=1, sort=False)
+
+
+        #bag_of_words = pd.DataFrame.sparse.from_spmatrix(tfidf_sparse_matrix)
+
+        #df = pd.concat([df, bag_of_words], axis=1, sort=False)
+
+        #countVec_count = countVectorizer.transform(messages)
+        #occ = np.asarray(countVec_count.sum(axis=0)).ravel().tolist()
+        #bowListFrame = pd.DataFrame({'term': countVectorizer.get_feature_names(), 'occurrences': occ})
+        #bowListFrame.sort_values(by='occurrences', ascending=False).head(60)
+
+        #tfidfTransformer = TfidfTransformer()
+        #weights = tfidfTransformer.fit_transform(countVec_count)
+        #weightsFin = np.asarray(weights.mean(axis=0)).ravel().tolist()
+
+        #tfidfFrame = pd.DataFrame({'term': countVectorizer.get_feature_names(), 'weight': weightsFin})
+        # tfidfFrame.sort_values(by='weight', ascending=False).head(20)
+        # print(tfidfFrame)
+
+        #df = pd.concat([df, tfidfFrame], axis=1, sort=False)
+
 
         return df
