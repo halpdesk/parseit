@@ -50,7 +50,7 @@ class WordStats:
 
         records = np.array([word_count_list, stop_words_count_list, bad_words_count_list])
         # print(records)
-        wc_dataframe = pd.DataFrame.from_records(data=records.T, columns=["word_count", "stop_words_count", "bad_words_count"])
+        wc_dataframe = pd.DataFrame.from_records(data=records.T, columns=["word_count", "stop_word_count", "bad_word_count"])
 
         df = pd.concat([df, wc_dataframe], axis=1, sort=False)
         # df["words_count"] = word_count_list
