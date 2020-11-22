@@ -29,23 +29,11 @@ def tokenize(document, method="nltk", by="word"):
 @lru_cache
 def stopwords():
     from nltk.corpus import stopwords as stop_words
-
     return set(stop_words.words("english"))
 
 
 @lru_cache
 def badwords():
-    # import os
-
-    # root_path = f"{os.path.dirname(os.path.realpath(__file__))}/.."
-    # filename = f"{root_path}/datasets/bad-words.csv"
-    # bad_words = []
-    # with open(filename) as f:
-    #     for word in f:
-    #         bad_words.append(word[:-1])
-    # # don't return the last empty line
-    # result = bad_words[:-1]
-    # return result
     import os
     root_path = f"/home/halpdesk/CODE/reddit-parser"
     filename = f"{root_path}/datasets/fb-bad-words.csv"
