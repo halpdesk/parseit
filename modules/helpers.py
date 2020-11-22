@@ -46,11 +46,30 @@ def badwords():
 
 
 # Interface lemma tokenizer from nltk with sklearn
+# class LemmaTokenizer:
+#     ignore_tokens = [',', '.', ';', ':', '"', '``', "''", '`', '[removed]', '>', '*', '_', "&", "$"]
+#     def __init__(self):
+#         from nltk.stem import WordNetLemmatizer
+#         self.wnl = WordNetLemmatizer()
+#     def __call__(self, doc):
+#         from nltk import word_tokenize
+#         return [self.wnl.lemmatize(t) for t in word_tokenize(doc) if t not in self.ignore_tokens]
+
+# Interface lemma tokenizer from nltk with sklearn
 class LemmaTokenizer:
     ignore_tokens = [',', '.', ';', ':', '"', '``', "''", '`', '[removed]', '>', '*', '_', "&", "$"]
-    def __init__(self):
+    stopwords = []
+    vocab = []
+    def __init__(self, stopwords=[], vocabulary=[]):
         from nltk.stem import WordNetLemmatizer
         self.wnl = WordNetLemmatizer()
+        self.stopwords = stopwords
+        self.vocab = vocabulary
     def __call__(self, doc):
         from nltk import word_tokenize
-        return [self.wnl.lemmatize(t) for t in word_tokenize(doc) if t not in self.ignore_tokens]
+        sig_words = []
+        for token in doc:
+            word = self.wnl.lemmatize(token)
+            if word not in self.stopwords + self.ignore_tokens and word in self.vocab:
+                sig_words.append(word)
+        return sig_words
