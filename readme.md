@@ -207,3 +207,21 @@ optional arguments:
 - Skewed data - use StratifiedKFold
 - Drop off skeded data so that we have similar sizes from all bins?
 - Normalize bag of words features [0-1]
+
+### Notes from session 2020-11-22
+
+"The experiments on word senses show that there is not much difference be-
+tween senses and words. The more plausible explanation is that the senses of
+a noun in documents of a category tend to be always the same. Moreover,
+different categories are characterized by different words rather than different
+senses."
+
+From https://www.researchgate.net/publication/221397355_Complex_Linguistic_Features_for_Text_Classification_A_Comprehensive_Study
+
+https://scholar.google.se/scholar?q=linguistic+features+text+classification&hl=en&as_sdt=0&as_vis=1&oi=scholart
+
+https://books.google.se/books?hl=en&lr=&id=iVuEBgAAQBAJ&oi=fnd&pg=PR8&dq=linguistic+features+text+classification&ots=RZztMnnCkn&sig=fCCEgvykI5SV-MhaTDva2KvnfFU&redir_esc=y#v=onepage&q=linguistic%20features%20text%20classification&f=false
+
+LINGUISTIC FEATURE CLASSIFYING AND TRACING
+Mohammadreza Moohebat 1 , Ram Gopal Raj 2 , Dirk Thorleuchter 3 and Sameem Binti Abdul Kareem 4
+https://www.researchgate.net/publication/318600257_Linguistic_Feature_Classifying_and_Tracing
