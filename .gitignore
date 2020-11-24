@@ -8,3 +8,5 @@ build/
 *.egg-info/
 *.p
 *.pdf
+!99.p
+!99-with-features.p
