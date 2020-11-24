@@ -16,6 +16,7 @@ grammatics, sociolinguistics, language technology.
 ```
   
 _Do we communicate in order to state truths or do we speak truths (occasionally) so we can communicate? (Cherpas)_
+Cherpas, Christopher. (1992). Natural language processing, pragmatics, and verbal behavior. The Analysis of verbal behavior. 10. 135-47. 10.1007/BF03392880.
 
 ### Revision history
 
@@ -59,7 +60,7 @@ _Do we communicate in order to state truths or do we speak truths (occasionally)
 > This command will create a new pickle file in the current directory called _comments.p_.
 
 **To use earlierfetched reddit data:**
-`python main.py --load-pickle comments.p `
+`python main.py --load-pickle comments.p`
 > This command will load data from a pickle file called _comments.p_.
 
 Here is a list of command line arguments.

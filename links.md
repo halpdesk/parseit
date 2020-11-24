@@ -27,18 +27,18 @@ Uncategorized:
 - https://www.kaggle.com/bittlingmayer/amazonreviews/notebooks
 - https://www.kaggle.com/fabiendaniel/customer-segmentation
 
-##### PoS
+### PoS
 
 Use POS to decide activum/passivum?
 
 - https://wibbu.com/using-python-and-nltk-to-automate-language-analysis-of-our-scripts/ (replace this later, it's worhless)
 
-##### TFIDF
+### TFIDF
 
 - https://towardsdatascience.com/text-summarization-using-tf-idf-e64a0644ace3 - nltk
 - https://towardsdatascience.com/natural-language-processing-feature-engineering-using-tf-idf-e8b9d00e7e76 - how to use sklearn in few rows
 - https://gdcoder.com/nlp-transforming-tokens-into-features-tf-idf/ - sklearn with ngram
 
-##### Other
+### Other
 
 - https://www.geeksforgeeks.org/removing-stop-words-nltk-python/ - how to remove stop-words
