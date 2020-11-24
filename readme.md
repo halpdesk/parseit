@@ -2,17 +2,19 @@
 
 ## Introduction
 
-Reddit is the 17th most popular web site as of August 30, 2020 according to Alexa^[https://www.alexa.com/siteinfo/reddit.com], with above 430 million monthly active users according to Oberlog^[https://www.oberlo.com/blog/reddit-statistics]. As such, it should serve well as a corpus in various lunguistical fields (written down as keywords below).
+This project started for a university project (linguistics, statistical analysis and machine learning). It has a small wrapper written above PRAW to scrape a set of chosen subreddits and store submissions and comments, along witht their score (no other data).  
+  
+Why reddit?  
 
+Reddit is the 17th most popular web site as of August 30, 2020 according to Alexa^[https://www.alexa.com/siteinfo/reddit.com], with above 430 million monthly active users according to Oberlog^[https://www.oberlo.com/blog/reddit-statistics]. As such, it should serve well as a corpus in various lunguistical fields (written down as keywords below).  
+  
 ```json
 Keywords:
 language structure, mophology, synctactic structure,
 semantics, pragmatics, secondary language usage,
 grammatics, sociolinguistics, language technology.
 ```
-
-This project aims to scrape a set of chosen subreddits and parse the content (mainly comments) in a linguistic context for statistical analysis. It is specifically written for a university project, and might not be maintained when the first version of this program (considered an MVP, that is when it fully satisfies that project) is reached.
-
+  
 _Do we communicate in order to state truths or do we speak truths (occasionally) so we can communicate? (Cherpas)_
 
 ### Revision history
@@ -23,96 +25,14 @@ _Do we communicate in order to state truths or do we speak truths (occasionally)
 | 2020-09-20 | Project, features list and links           | Daniel Leppänen |
 | 2020-09-24 | Install and run                            | Daniel Leppänen |
 | 2020-10-03 | More notes and links/meeting session notes | Daniel Leppänen |
+| Forward    | See [sessions.md](sessions.md) | All me ... |
 
-## Project
-
-This code project is set up as easily as possible; resembling of a simple script but with some concern for separation of code. The main packages used by this project are:
-
-- nltk (natural language toolkit)
-- seaborn (graphs)
-- sklearn (ML)
-- praw (python reddit api wrapper)
-
-A pickle is used to store all reddit data after first run. SKLearn is used to classify and learn which comments score high depending on which combination of linguistic features gives high score.
-
-### Features
-
-- Text length
-- Lexical and morphological
-  - TF*IDF
-  - common words in english
-  - profanity
-- Otrhography - usage and quality of non-alphabetical characters (graphemes), capitalization, spelling (norms), emphasis
-    (also consider rating emoticons / smilies usage)
-- Syntax - phrase structure trees and dependency trees
-- Semantics - aspectual classes and reichenbach’s tenses
-- How well comment aligns with topic (similarity between topic and comment)
-
-#### Uncertain
-
-- Pragmatics - implicature / Grice maxims
-
-### Problems
-
-- Comment score depends on views - once a comment is "hot" it attracts more views and more votes
-- n-level comments depend much on the first-level comment (POSSIBLE SOLUTION: consider only first-level comments)
-
-### Interesting things
-
-#### Papers
-
-- Hatzivassiloglou, V & Klavans, J L & Eskin, E (1999), Detecting Text Similarity over Short Passages: Exploring Linguistic Feature Combinations via Machine Learning
-- William Croft (1994) Semantic universals in classifier systems, Word, 45:2, 145-171, DOI: 10.1080/00437956.1994.11435922
-- Muresan, S & Tzoukermann, E & Klavans, J L (), Combining Linguistic and Machine Learning Techniques for Email Summarization
-- Cherpas, C (1992). Natural language processing, pragmatics, and verbal behavior. Analysis Verbal Behav 10, 135–147. https://doi.org/10.1007/BF03392880 (Fetched 2020-02-12)
-
-#### Other links
-
-- NLTK - Learning to classify text: https://www.nltk.org/book/ch06.html
-- 10000 most common words in english (https://github.com/first20hours/google-10000-english or https://www.kaggle.com/rtatman/english-word-frequency)
-- KNN example with sklearn: https://towardsdatascience.com/knn-using-scikit-learn-c6bed765be75#:~:text=KNN%20(K%2DNearest%20Neighbor),hence%20it%20is%20non%2Dparametric
-- older KNN example: https://www.datacamp.com/community/tutorials/k-nearest-neighbor-classification-scikit-learn
-
-Uncategorized:
-
-- Also check https://catboost.ai/ (categories like for tempuses)
-- https://www.kaggle.com/bittlingmayer/amazonreviews/notebooks
-- https://www.kaggle.com/fabiendaniel/customer-segmentation
-
-##### POS
-
-Use POS to decide activum/passivum?
-
-- https://wibbu.com/using-python-and-nltk-to-automate-language-analysis-of-our-scripts/ (replace this later, it's worhless)
-
-##### TFIDF
-
-- https://towardsdatascience.com/text-summarization-using-tf-idf-e64a0644ace3 - nltk
-- https://towardsdatascience.com/natural-language-processing-feature-engineering-using-tf-idf-e8b9d00e7e76 - how to use sklearn in few rows
-- https://gdcoder.com/nlp-transforming-tokens-into-features-tf-idf/ - sklearn with ngram
-
-##### Other
-
-- https://www.geeksforgeeks.org/removing-stop-words-nltk-python/ - how to remove stop-words
-
-#### Concepts
-
-- For each token/(here: comment), we will have a feature column and this is called text vectorization.
-- Extracting n-grams to preserve some ordering (vs BOW - bag of words)
-- Stop-words = words articles and prepositions
-
-## Set up and run
+## Scrape tool
 
 ### Requirements
 
 1. python 3.8
-2. NLTK data
-3. lzma module
-
-### Install NLTK
-
-1. `python -m nltk.downloader all`
-2. `sudo python -m nltk.downloader -d /usr/local/share/nltk_data all`
+2. lzma module
 
 ### Instlal lzma module for pandas
 
@@ -154,74 +74,60 @@ optional arguments:
   --submissions [SUBMISSIONS]               How many submissions to fetch for each subreddit
 ```
 
-### Other / Old
+## Project
 
-- See how to scrape reddit here: [https://www.storybench.org/how-to-scrape-reddit-with-python/](https://www.storybench.org/how-to-scrape-reddit-with-python/)
-- Use pandas, pendulum and praw
-- Consider data store in binary files (with pickle), but look into HDF
-- Use matplotlib, plotly or seaborn for graphs
-- Use sklearn for ML
-- What constitutes a "good" good and a "bad" content?
-    Content might need to be classified and rate of new content might need to be learned
+This project was initially set up with a simple architecture resembling that of a software; i.e. with some concern for separation of code, etc.
+As I've progressed I learned to use a work flow with jupyter notebooks and recently set up them so they can be run as a pipeline:
 
-### Notes from session 2020-09-29
+1. First file loads pickle file and calculate all features for ML and saves to new pickle
+2. Second file loads pickle and generate graphs
+3. Third file loads pickle to train the ML
 
-- Check research and find text features
-- Build text feature data from text, let the upvotes be the variable to predict (y)
-- Split the data in training data and test
-  Maybe use k-fold for training if not that much data https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.KFold.html
-- Use a regression, say random forest and train it on the data
-  https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html
-- Select hyper paramaters with a baysain optimization algorithm or CVGrid
-  https://scikit-optimize.github.io/stable/auto_examples/bayesian-optimization.html#sphx-glr-auto-examples-bayesian-optimization-py
-- Score the test data and see if the regression learned anything
-- Output the feature relevance for the score
+### Prerequisites
 
-  ```python
-  # Let's have a look at the feature importance
-  fi = pd.DataFrame(data={"Feature": X.columns, "Importance": clf.feature_importances_ * 100, "Std": 100 * np.std([tree.feature_importances_ for tree in clf.estimators_], axis=0)})
-  sns.barplot(x='Importance', y='Feature', color='gray',
-              data=fi.sort_values("Importance", ascending=False),
-              **{'xerr':fi["Std"], 'ecolor': '#333333'})
-  plt.title('Feature importance \n')
-  plt.xlabel('Importance (%)')
-  plt.ylabel('Feature')
-  ```
+Install NLTK
 
-### Notes from session 2020-10-08
+1. `python -m nltk.downloader all`
+2. `sudo python -m nltk.downloader -d /usr/local/share/nltk_data all`
 
-- Try regression or otherwise bin/chunk labels
-  - MSE on scoring (0 = good)
-- Use transformers / scalers on labels (not Standard: because gaussian and labels are not normal distributed(?), maybe MinMax)
+### Features
 
-### Notes from session 2020-10-17
+#### Classical text features
 
-- Always check user guide: https://scikit-learn.org/stable/user_guide.html
-- Needs scaling?: https://stats.stackexchange.com/questions/244507/what-algorithms-need-feature-scaling-beside-from-svm
-- Feature scaling: https://sebastianraschka.com/Articles/2014_about_feature_scaling.html
-- Preprocessing and scaling: https://scikit-learn.org/stable/modules/preprocessing.html
-- Preprocessing api list: https://scikit-learn.org/stable/modules/classes.html#module-sklearn.preprocessing
+- Bag of words
+- Bag of bigrams
+- TF-IDF (which is also a bag)
 
-### Notes from session 2020-10-26
+_Works with: **Naive Bayes** (MultinomialNB, both regression and classifier) and other models which can handle_ a lot _of features_
 
-- Skewed data - use StratifiedKFold
-- Drop off skeded data so that we have similar sizes from all bins?
-- Normalize bag of words features [0-1]
+#### Other features implemented
 
-### Notes from session 2020-11-22
+- Number of significant words (might add a list for word ranking)
+- Number of stop words
+- Number of bad words (lemmatized words are matched against a common profanity filter list)
+- Number of positive smilies
+- Number of negative smilies
+- Number of neutral smilies
+- Similarity with topic
+- Similarity with all other comments
+- TF-IDF mean value
 
-"The experiments on word senses show that there is not much difference be-
-tween senses and words. The more plausible explanation is that the senses of
-a noun in documents of a category tend to be always the same. Moreover,
-different categories are characterized by different words rather than different
-senses."
+_Works with: **KNN**(?),  **SVM**(?)_ (currently trying)
 
-From https://www.researchgate.net/publication/221397355_Complex_Linguistic_Features_for_Text_Classification_A_Comprehensive_Study
+> Note: Sentiment analysis has been made a couple of times for smilies. See http://kt.ijs.si/data/Emoji_sentiment_ranking/about.html
 
-https://scholar.google.se/scholar?q=linguistic+features+text+classification&hl=en&as_sdt=0&as_vis=1&oi=scholart
+#### Other fields from where features might get extracted
 
-https://books.google.se/books?hl=en&lr=&id=iVuEBgAAQBAJ&oi=fnd&pg=PR8&dq=linguistic+features+text+classification&ots=RZztMnnCkn&sig=fCCEgvykI5SV-MhaTDva2KvnfFU&redir_esc=y#v=onepage&q=linguistic%20features%20text%20classification&f=false
+- Lexical and morphological
+- Otrhography - usage and quality of non-alphabetical characters (graphemes), capitalization, spelling (norms), emphasis
+    (also consider rating emoticons / smilies usage)
+- Syntax - phrase structure trees and dependency trees
+  - activum / passivum might be derived from this
+- Semantics
+  - aspectual classes and reichenbach’s tenses
+- Pragmatics
+  - implicature / Grice maxims
 
-LINGUISTIC FEATURE CLASSIFYING AND TRACING
-Mohammadreza Moohebat 1 , Ram Gopal Raj 2 , Dirk Thorleuchter 3 and Sameem Binti Abdul Kareem 4
-https://www.researchgate.net/publication/318600257_Linguistic_Feature_Classifying_and_Tracing
+### Problems
+
+- Comment score depends on views - once a comment is "hot" it attracts more views and more votes: this leads to an unbalanced dataset
