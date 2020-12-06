@@ -1,0 +1,12 @@
+66.46153846153847% 648 correct guesses of 975 in split:1
+66.46153846153847% 648 correct guesses of 975 in split:2
+67.35112936344969% 656 correct guesses of 974 in split:3
+68.17248459958932% 664 correct guesses of 974 in split:4
+67.86447638603697% 661 correct guesses of 974 in split:5
+
+Avarage accuracy for all splits (manually calculated): 67.26223345443059%
+
+Accuracy: 67.26223345443059% (3277 comments of 4872)
+
+Balanced accuracy: 50.97882871041902%
+

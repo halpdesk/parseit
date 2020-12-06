@@ -1,0 +1,31 @@
+From 11 oct and 11 nov datasets merged, we had:
+                  
+subreddit         number
+------------------------
+askreddit          18304
+askscience          3804
+explainlikeimfive   3470
+news               15036
+science            10311
+todayilearned      17640
+worldnews          16708
+
+(~85k comments)
+
+
+
+This was reduced to:
+
+subreddit         number
+------------------------
+askreddit          9427 
+askscience          613 
+explainlikeimfive   587 
+news               2269 
+science             896 
+todayilearned      1389 
+worldnews          1659 
+
+Number of comments: 16840, number of words: 860211
+
+(16840, 4)
