@@ -1,0 +1,12 @@
+52.48677248677248% 496 correct guesses of 945 in split:1
+50.15873015873016% 474 correct guesses of 945 in split:2
+51.53439153439153% 487 correct guesses of 945 in split:3
+49.629629629629626% 469 correct guesses of 945 in split:4
+49.2063492063492% 465 correct guesses of 945 in split:5
+
+Avarage accuracy for all splits (manually calculated): 50.60317460317461%
+
+Accuracy: 50.60317460317461% (2391 comments of 4725)
+
+Balanced accuracy: 38.16737931285205%
+
