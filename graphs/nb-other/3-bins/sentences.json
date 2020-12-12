@@ -1,0 +1,522 @@
+[
+    {
+        "correct": [
+            {
+                "sent": "she seemed like she lived a fulfilling life. R.I.P.",
+                "labl": 105,
+                "true_bin": 1,
+                "pred_bin": 1
+            },
+            {
+                "sent": "Who do you think started the fires?",
+                "labl": 40276,
+                "true_bin": 1,
+                "pred_bin": 1
+            },
+            {
+                "sent": "We took back the cities, but it's in our minds that any day could be the day that we need to pick up our whacking sticks to defend our bbq retreats from another invasion.",
+                "labl": 7832,
+                "true_bin": 1,
+                "pred_bin": 1
+            },
+            {
+                "sent": "We are moving in to spring. It is a terrifying time for us all as their allies the Magpies launch sorties.\n\nPray for us.",
+                "labl": 382,
+                "true_bin": 1,
+                "pred_bin": 1
+            },
+            {
+                "sent": "Currently in the \"Green zone\", otherwise known as Tasmania. Everything is back to normal life now. Things got scary for a little while but our premier looked after us. Got our boarders shut down early and its paid off.\n\nEveryone knows that emus cant fly over the Bass Strait so we knew that would be advantageous in our victory against the feathered folks. But the rest of Australia, known to us Tasmanians as, The Mainland has never fully recovered. Recent reports are showing they have some form a plague there at the moment. Horrid stuff. Onwards and upwards. The fight against the feather never ends!",
+                "labl": 690,
+                "true_bin": 1,
+                "pred_bin": 1
+            },
+            {
+                "sent": "Why do you think we have to ride kangaroos to school",
+                "labl": 6,
+                "true_bin": 1,
+                "pred_bin": 1
+            },
+            {
+                "sent": "What the fuck happened with Emus in Australia?",
+                "labl": 5,
+                "true_bin": 1,
+                "pred_bin": 1
+            },
+            {
+                "sent": "My wife and I moved to WA state and my MIL tried to tell me that she was going to call the police because I had pot in the house.",
+                "labl": 2672,
+                "true_bin": 1,
+                "pred_bin": 1
+            },
+            {
+                "sent": "My mother made my childhood hell (unpredictable moods, every second weekend would be family drama weekend with day long tirades about how everyone hates her and we are horrible to her and surely we are so vile and want her to leave; yelling and abuse got so bad I got panic attacks and nothing was done about it, random beating, crying, insults, very controlling, went through my letters and diary, called me a whore or dumb as a cow when I came home 15 minutes too late, the works)...After what seemed like ages of struggling, I finally managed to move out at age 21, to an address within the same city.\n\nHer whining continued. Why would I not give her keys to my apartment? Why did I not phone in every day? Where was I, who was I with, what was I doing at every time of the day? I must hate her! I must be looking forward to dancing on her grave!\n\nI tried to not react and give her more ammunition, but when she ended up asking at some point \"Why are you not coming by and visiting us every day??\", I finally replied \"because I don't live here anymore\", and THANK GOD it shut her up.\n\nEdit: Ironing out some typos, formating. Also whoah thanks for all these likes you guys.",
+                "labl": 6304,
+                "true_bin": 1,
+                "pred_bin": 1
+            },
+            {
+                "sent": "I have one that crosses with \"I don't work here lady\" a bit.\n\nI have a job, but I will still do interviews every couple years.  this means the script is flipped a bit.   They have to convince me to work there.\n\nAnyway I got the town early so I stopped at a bakery to get something to eat.  the woman went in the back to get it, and this squat toad of a woman walks in, yells at me to get her order and then yells at me again for not getting up right away to serve her.  When I point out that I do not in fact work there she goes off me about how important she is etc.   We can skip the play by play.\n\nI go the interview.   Head of IT and the toad woman walks in.   She has this evil grin on her face.   I stop everything.   I point at the toad woman and I say something like \"I have seen how your managements treats people, and I have no interest in working for you\"  and I take my resume out his hands and walk out.     The look on her face was priceless.   Oh and he had walked in with a print of a resume, so I took his copy.\n\nFelt great to do.\n\nEdit: And gold? thanks kind stranger!\n\nEdit 2: Reward overload! thank you all so much",
+                "labl": 13607,
+                "true_bin": 1,
+                "pred_bin": 1
+            },
+            {
+                "sent": "A museum in a town added to its collection a replica of Michelangelo's famous nude statue, *David*.\n\nThe pastor of a nearby church demanded that the curator remove it from display because it was \"inappropriate\" for public viewing.\"\n\nTo her credit, the museum's curator told the clergyman in unequivocal terms that the church had no say in the matter and that fine art would be exhibited without need for ecclesiastical approval.\n\nhttps://en.wikipedia.org/wiki/David_%28Michelangelo%29#/media/File:'David'_by_Michelangelo_Fir_JBU002.jpg",
+                "labl": 781,
+                "true_bin": 1,
+                "pred_bin": 1
+            },
+            {
+                "sent": "Just last week we had another supervisor from a different department come and tell us what he needed(not uncommon in my job) like \"oh I need this by this date\" but we're super swamped right now and my coworker said \"oh we can probably get to that next week because we are working on another project\" and the supervisor said \"this needs to be done now\" and my coworker said \"we'll do it in 3 weeks, sorry!\" And there's really nothing the other supervisor can do.",
+                "labl": 654,
+                "true_bin": 1,
+                "pred_bin": 1
+            },
+            {
+                "sent": "My mother trying to force me to do stuff when she came and visited my dad's house.",
+                "labl": 3303,
+                "true_bin": 1,
+                "pred_bin": 1
+            },
+            {
+                "sent": "Heavy update there yet?",
+                "labl": 389,
+                "true_bin": 1,
+                "pred_bin": 1
+            },
+            {
+                "sent": "Cure for type 1 diabetes. Doctors have been saying its five years away for awhile now.",
+                "labl": 32341,
+                "true_bin": 1,
+                "pred_bin": 1
+            },
+            {
+                "sent": "Betty White and Keith Richards. I assume they'll both be alive but I want to know for sure.",
+                "labl": 9799,
+                "true_bin": 1,
+                "pred_bin": 1
+            },
+            {
+                "sent": "My name + obituary. \n\nIf I get more searches? 2020, 2024 election results. COVID vaccine FDA approval parent company. TSLA, GOOG, APPL, FB prices.",
+                "labl": 4726,
+                "true_bin": 1,
+                "pred_bin": 1
+            },
+            {
+                "sent": "I'll write all the future match results.\n\nAnd I'll use it on the lottery, and I'll make money with it.",
+                "labl": 1004,
+                "true_bin": 1,
+                "pred_bin": 1
+            },
+            {
+                "sent": "Outcome of sporting events so I can place some bets. \n\nAlso, I'd look up if my favorite music artists were still alive so if they were to die I could warn them. Wish I could have done this with Adam \"MCA\" Yauch of the Beastie Boys",
+                "labl": 261,
+                "true_bin": 1,
+                "pred_bin": 1
+            },
+            {
+                "sent": "Is Betty White still alive?",
+                "labl": 130,
+                "true_bin": 1,
+                "pred_bin": 1
+            },
+            {
+                "sent": "Lottery numbers",
+                "labl": 431,
+                "true_bin": 1,
+                "pred_bin": 1
+            }
+        ],
+        "incorrect": []
+    },
+    {
+        "correct": [
+            {
+                "sent": "Shelly Miscavige is either dead or being held prisoner by the Church of Scientology.",
+                "labl": 21943,
+                "true_bin": 2,
+                "pred_bin": 2
+            },
+            {
+                "sent": "Mattress stores are just money laundering fronts.",
+                "labl": 5207,
+                "true_bin": 2,
+                "pred_bin": 2
+            },
+            {
+                "sent": "I'm 95% certain *Monty Python And The Holy Grail* is not historically accurate, and that medieval knights didn't go about banging coconut halves together to make horse riding sounds.",
+                "labl": 2099,
+                "true_bin": 2,
+                "pred_bin": 2
+            },
+            {
+                "sent": "Playing guitar infront of people",
+                "labl": 405,
+                "true_bin": 2,
+                "pred_bin": 2
+            },
+            {
+                "sent": "I was gonna say rim jobs then I saw all the thoughtful answers....\n\nEdit.  Thanks for the awards folks,  I'll pay it forward.  With rim jobs of course.",
+                "labl": 1340,
+                "true_bin": 2,
+                "pred_bin": 2
+            },
+            {
+                "sent": "Not wearing a bra when I leave the house. Quarantine freed the boobs, and they will never be oppressed again!",
+                "labl": 72,
+                "true_bin": 2,
+                "pred_bin": 2
+            },
+            {
+                "sent": "My boyfriend woke me up the other day by gently putting his fingers in my mouth and I kept moving my head out of the way until eventually I was like \u201ccan you stop that!!!\u201d\n\nHe then sounded genuinely upset and asked why I woke him up as he was having a really nice dream about feeding a deer. Brilliant.",
+                "labl": 5040,
+                "true_bin": 2,
+                "pred_bin": 2
+            },
+            {
+                "sent": "\nOne night, my boyfriend  woke me up in the middle of the night, tapping me on my shoulder. He put his  finger on his mouth, whispered \"shush\" to me, then pointed at the door and told me \"I can hear something, don't move\". Predictably, I nearly shit my pants. All the worst possible scenarios crossed my mind, and the moment of silence after he shushed me felt like hours. Then, he started waving his hands and talking about tetris, 'the twirlies' (idk), and making sure we don't align... And that's how I learnt my boyfriend talks in his sleep.",
+                "labl": 7910,
+                "true_bin": 2,
+                "pred_bin": 2
+            },
+            {
+                "sent": "Husband woke up in the morning and told me about a crazy dream he had: we were hosting a party and he was serving cookies. He was upset that nobody was eating them. When we went downstairs, we discovered a full plate of cookies sitting on our dining table.",
+                "labl": 6893,
+                "true_bin": 2,
+                "pred_bin": 2
+            },
+            {
+                "sent": "I was about 14 years old, me and my bestfriend went to sleep (we were sleeping in his basement) after watching an horror movie. I realized that I was sleepwalking when I regain consciousness while I was swinging on his rocking chair on the first floor (in his living room), at 3 or 4am. Had no idea how I got there, how long I was on the chair, just swinging and staring at the tv (wich was obviously turned off) and what I did before. It freaked me out since I couldn\u2019t think about anything else but that movie.\n\nI used to sleepwalk a lot when I was younger. The weird thing is that, sometimes I was kind of conscious during the whole thing. But for some reason, it felt like everything I was doing made perfect sense, even tho it clearly did not. But that particular time was the one that freaked me out the most.\n\nEDIT: Wow, that\u2019s my first ever comment to blow up, It\u2019s nice tho to see that other people have  experienced similar things. I thought I was the only one.",
+                "labl": 1924,
+                "true_bin": 2,
+                "pred_bin": 2
+            },
+            {
+                "sent": "My ex husband talked in his sleep every night. Our daughter began babbling in her sleep as a baby and still talks in her sleep pretty much every night. Occasionally they yell out. One night when I was still with my ex, I was right on the edge of falling asleep. He yelled out so loudly CHICKEN SANDWICH!!! and scared me half to death.",
+                "labl": 881,
+                "true_bin": 2,
+                "pred_bin": 2
+            },
+            {
+                "sent": "Best friend slept with his new girlfriend for the first time on vacation. People were sharing hotel rooms to save cash so he was in the room with 3  other girls he barely knew. Apparently in the middle of the night he yelled \u201cSHUT UP I CAN TELL IF YOU\u2019RE ACTUALLY GAY.\u201d",
+                "labl": 146,
+                "true_bin": 2,
+                "pred_bin": 2
+            },
+            {
+                "sent": "Stubbornness.\n\nWhen I was in middle and high school, the first time I was suicidal, I thought I wouldn't make it to 25. When I got out of that I decided I was going to make it to 25, damn the torpedoes, full speed ahead. I'm 25 now but I made it this far. If the mental illness wants me dead so badly it needs to shut down my organs and kill me its damn self, because I'm not going anywhere.\n\nAlso, my pets. I don't want to be without my pets. They were the only things that made me happy, and even when I didn't feel like anyone else loved me I knew they did.",
+                "labl": 9954,
+                "true_bin": 2,
+                "pred_bin": 2
+            },
+            {
+                "sent": "This thread...",
+                "labl": 220,
+                "true_bin": 2,
+                "pred_bin": 2
+            },
+            {
+                "sent": "High end art is a scheme to launder money and avoid taxes.",
+                "labl": 7739,
+                "true_bin": 2,
+                "pred_bin": 2
+            },
+            {
+                "sent": "AncestryDNA and the rest of those ancestry websites are run by the government to have access to people\u2019s DNA to cross reference crimes etc.",
+                "labl": 18912,
+                "true_bin": 2,
+                "pred_bin": 2
+            },
+            {
+                "sent": "the official story in the deaths of JFK princess diana and Jeffrey Epstein are lies",
+                "labl": 1656,
+                "true_bin": 2,
+                "pred_bin": 2
+            },
+            {
+                "sent": "We're all puppets and social media and news corporations are the puppet masters. Watch the social dilemma on Netflix if you're curious. I'm seriously freighted at the lack of control that we have and that *I* have when it comes to social media. However bad you think it is, it's probably worse",
+                "labl": 1014,
+                "true_bin": 2,
+                "pred_bin": 2
+            },
+            {
+                "sent": "Paint/draw and then share it with strangers. I did not grow up with art and had absolutely no confidence in attempting it. During our quarantine this spring, I taught myself how to watercolor and draw birds and am now selling prints and stickers and donating 100% of the profits to bird conservation groups. \n\nI just love birds.",
+                "labl": 2950,
+                "true_bin": 2,
+                "pred_bin": 2
+            },
+            {
+                "sent": "Wearing pink and purple as a male. I always felt weird about it until my wife finally convinced me to get shirts for work in those colors. Now they\u2019re basically all I wear. I get a lot of compliments and I feel great in it.",
+                "labl": 985,
+                "true_bin": 2,
+                "pred_bin": 2
+            },
+            {
+                "sent": "I was gonna say rim jobs then I saw all the thoughtful answers....\n\nEdit.  Thanks for the awards folks,  I'll pay it forward.  With rim jobs of course.",
+                "labl": 1340,
+                "true_bin": 2,
+                "pred_bin": 2
+            }
+        ],
+        "incorrect": [
+            {
+                "sent": "It's too bad all we can see in the Supreme Court is the D or R when it shouldn't matter.  Justice is no longer blind.",
+                "labl": 5332,
+                "true_bin": 2,
+                "pred_bin": 1
+            },
+            {
+                "sent": "Them long necked fuckers are just waiting for the opportune moment! Considering our country is weakened, and divided by Covid they are more than likely about to make a move in the coming weeks",
+                "labl": 10096,
+                "true_bin": 2,
+                "pred_bin": 1
+            },
+            {
+                "sent": "The day after we signed the papers for our first house, we stopped by to move some things in. We pulled up to the house & saw the previous owner digging up the last 3 three plants in the front yard. She had pulled up everything else in the yard & loaded up the back of her pickup. It was packed. (It was a corner lot so there were multiple beds on two sides of the house.) When we asked her wtf she was doing, she said she had just planted them to make the house look nicer while it was listed for sale & that she really liked them & didn't want to have to but more for her new house. We got to meet the local cops that day. She had the choice of re-planting them all back exactly how they were before or get arrested. She spent the next 5+ hours making that shit right again. The cops said to call them when she was done & looked everything over before they let her go with the warning that if she ever came back she would be arrested. Never saw her again. Also found her weed stash on the top of the kitchen cabinets a few days later.",
+                "labl": 187,
+                "true_bin": 2,
+                "pred_bin": 1
+            },
+            {
+                "sent": "I would start a blog on my pc and then switch to my phone to check if it now has updates from the future. If so, my future self could talk to my present self.\n\nI could read about my mistakes and try to avoid them. If a post disappears, that would mean that I did it right.\n\nEdit: Holy shit thank you for all the likes and awards!",
+                "labl": 25435,
+                "true_bin": 2,
+                "pred_bin": 1
+            },
+            {
+                "sent": "This question is just \"would you rather have erectile dysfunction or crippling self esteem issues\"",
+                "labl": 1731,
+                "true_bin": 2,
+                "pred_bin": 1
+            },
+            {
+                "sent": "In Dirty Dancing, Jerry Orbach just wanted a family summer vacation and instead learned entirely too much about his daughters\u2019 sex lives.",
+                "labl": 35525,
+                "true_bin": 2,
+                "pred_bin": 1
+            },
+            {
+                "sent": "Mr Mosby from Suite Life - dudes got it rough, he\u2019s just trying to run a hotel but these kids are hell bent on sabotaging everything, and to make matters worse they live there so it\u2019s daily occurrence\n\nEdit: These comments have kick started my nostalgia, it\u2019s time to rewatch the show.",
+                "labl": 31434,
+                "true_bin": 2,
+                "pred_bin": 1
+            },
+            {
+                "sent": "Sounds blasphemous to say about a movie I dearly love and pushing the definition of teen, but Animal House. If you\u2019ve got a fraternity destroying a campus and members that are flunking out the Dean has to do something. And when he tells Flounder \u201cfat drunk and stupid is no way to go through life son,\u201d well he actually sounds concerned and that is good advice.",
+                "labl": 653,
+                "true_bin": 2,
+                "pred_bin": 1
+            },
+            {
+                "sent": "Not a movie, but I identify with Buffy the Vampire Slayer\u2019s Giles more and more each year.",
+                "labl": 773,
+                "true_bin": 2,
+                "pred_bin": 1
+            },
+            {
+                "sent": "Goddammit, T-Karen, your gender reveal T-party brought a fucking meteor down on us. Great job.",
+                "labl": 536,
+                "true_bin": 2,
+                "pred_bin": 1
+            },
+            {
+                "sent": "You won\u2019t always be living with your parents!",
+                "labl": 35854,
+                "true_bin": 2,
+                "pred_bin": 1
+            },
+            {
+                "sent": "I\u2019ve said this before but it\u2019s important. \nWhen someone says you can\u2019t do something in life, it means they can\u2019t do it, not that you can\u2019t.",
+                "labl": 3371,
+                "true_bin": 2,
+                "pred_bin": 1
+            },
+            {
+                "sent": "No one owes you a thing. Live your life well by working for what you want. Make good decisions. Not based on fleeting emotions but reason and common sense. Good financial decisions are a must! Know what it costs. \n\nDon't be afraid to seperate yourself from so called friends if those friends are not moving forward. Dont allow their defeatest attitude to hold you back.",
+                "labl": 160,
+                "true_bin": 2,
+                "pred_bin": 1
+            },
+            {
+                "sent": "It's called marriage.",
+                "labl": 24999,
+                "true_bin": 2,
+                "pred_bin": 1
+            },
+            {
+                "sent": "Why have so many people in the comments found purple dildos",
+                "labl": 8981,
+                "true_bin": 2,
+                "pred_bin": 1
+            },
+            {
+                "sent": "A Night at the Opera by Queen",
+                "labl": 5019,
+                "true_bin": 2,
+                "pred_bin": 1
+            },
+            {
+                "sent": "Dookie - Green Day.",
+                "labl": 1807,
+                "true_bin": 2,
+                "pred_bin": 1
+            },
+            {
+                "sent": "Rimworld. Edit join us at r/RimWorld",
+                "labl": 7834,
+                "true_bin": 2,
+                "pred_bin": 1
+            },
+            {
+                "sent": "As long as I never see Steve Irwin, Mr. Rogers, or Bob Ross in one of these threads, we\u2019re good.",
+                "labl": 418,
+                "true_bin": 2,
+                "pred_bin": 1
+            },
+            {
+                "sent": "A shorter list would be \"Which of history's good guys were truly good guys and not later found out to be complete a$$holes\".\n\nEdit: Thank you for the award, stranger! I don't really know what else to say! So, thank you!",
+                "labl": 23402,
+                "true_bin": 2,
+                "pred_bin": 1
+            },
+            {
+                "sent": "Thomas Edison. Biggest monopolist ever and took credit for other people's work. He didn't invent the lightbulb but bought the rights and advanced it. He monopolized the film-projector + most films at the time and it took a very long lawsuit to get that fixed. He took many creations from his employees and put his name on it. This wasn't illegal because of the contracts employees signed at the time but it's not exactly a sign of good will. I don't hate the guy but his character is often completely exaggerated.",
+                "labl": 25886,
+                "true_bin": 2,
+                "pred_bin": 1
+            }
+        ]
+    },
+    {
+        "correct": [],
+        "incorrect": [
+            {
+                "sent": "It\u2019s been 7 years since the creator of gifs confirmed the correct pronunciation of the word. This just proves that nobody on the internet has forgiven him.",
+                "labl": 474,
+                "true_bin": 3,
+                "pred_bin": 1
+            },
+            {
+                "sent": "It\u2019s so hard... *sniffs* some days we just cant get our milo because the emus have placed road blocks from Darwin to Cairns. At night we cant sleep with the gun fire going off in the background. We\u2019ve taken to poisoning the emus food supplies with large spoonfuls of vegemite. (If you ever eat vegemite, THINLY spread it over toast or bread, THINLY) just last week we found that the emus had recruited some dingos. *starts to cry* and me younger brother was eaten by \u2018em. *starts bawling*.............*suddenly stops crying* but enough about me, how ya goin\u2019?",
+                "labl": 9,
+                "true_bin": 3,
+                "pred_bin": 1
+            },
+            {
+                "sent": "As an American there\u2019s so much information on this post that I never even knew existed. Fires? Emu War? No coverage in the States smh",
+                "labl": 6,
+                "true_bin": 3,
+                "pred_bin": 1
+            },
+            {
+                "sent": "Wtf, I'm already horny all the time....I take option B",
+                "labl": 3145,
+                "true_bin": 3,
+                "pred_bin": 1
+            },
+            {
+                "sent": "B. Because Nothing gets me more aroused than to be condescended and corrected. \u201cYEAH MAKE ME FEEL STUPID DADDY!\u201d\n\n*smart ghost exits stage left feeling dirty*",
+                "labl": 982,
+                "true_bin": 3,
+                "pred_bin": 1
+            },
+            {
+                "sent": "Obligatory \"not a movie but...\"\n\nWhen I was younger, hank Hill seemed like the most boring buzzkill stick in the mud. He didn't get teen slang and would get grumpy in his confusion. He didn't put up with antics and was always telling his friends to knock it off.\n\nWhen you get older, you realize hank hill is exactly the kind of guy you want to be. He always keeps his word. He's always responsible. He has faith in people. He's a good friend, always there to help his pals out when they need it. He doesn't understand his son but he does his best to support him. \n\nAnd he doesn't put up with bullshit. It's not zany antics he's stamping out, it's bullshit.",
+                "labl": 1252,
+                "true_bin": 3,
+                "pred_bin": 1
+            },
+            {
+                "sent": "Understand how much more you will understand in the future and don\u2019t be ashamed to admit that you may not understand things.",
+                "labl": 57,
+                "true_bin": 3,
+                "pred_bin": 1
+            },
+            {
+                "sent": "I'm 39.\n\n&nbsp;\n\n#1. Life is work. \n\nEverything requires perpetual maintenance. All elements of your life, be they self-care, friendships, relationships, work-life balance, health, your house, your car, bank accounts, etc. require **constant** repair. This is our attempt at slowing down entropy. We'll never stop it, as the [energy of the universe](https://www.youtube.com/watch?v=w2iTCm0xpDc) is constantly trying to seek perfect equilibrium, and our efforts only last a lifetime. If you wish to be even *remotely* successful in life, you will recognize how much work you will need to put into every little thing. Otherwise, you'll end up like me: alone, unloved, unhealthy, and ready to die at a moment's notice.\n\n&nbsp;\n\n#2. \"Know thyself.\"\n\nIf you don't know who you are, you're gonna have a bad time. You need to understand that your life is HEAVILY impacted by various forms of luck: where you live; how much money your family has; how abusive your family is; the school system's resources; the literal air that you are breathing. These all have an impact on your life, and the possibility of your future life. The opportunities or obstacles of your life are LARGELY dictated by simple factors of luck. Not all, but I'll get to that.\n\n&nbsp;\n\n#3. \"Be yourself\"...is horseshit.\n\nIf you don't know who you are, *how the hell can you be yourself\u203d* How do you overcome this catch-22? \n\nA better variant, IMO, is ***\"be the person you wish to become\"***. Not a living or dead person that you hope to magically morph into. But the person that you, in your mind, wish to be in the future. \n\nDo you want to [be kind](https://www.youtube.com/watch?v=sicUhD1n-es), or ruthless? Do you want to be respected, or feared? To you want to help, or hurt? Those are broad and vague, and there are many many more, but they're starting points for how to approach your future. If you've decided to be ruthless, then you'll begin to adapt behaviors that go that route. If you're a meek and timid person who can't even say their name clearly (been there, done that, relevant username now), you're not likely to command any kind of respect.\n\nIf who you are right now is not what you want to be, then \"being yourself\" is the worst advice you'll receive. You must change yourself, because whether you like it or not, change occurs, and you can't control the majority of those changes. So change the ones you *can*.\n\n&nbsp;\n\n#4. Friends come and go.\n\nThe reason you have friends *right now* is because of geographic (and, to a not-to-be-dismissed degree, socioeconomic) reasons. Once you stop going to the same schools, and movie theaters, and book stores, and restaurants, etc. the friendships will begin to diminish. You will more likely grow apart over time, not together. It's possible, sure. But don't make any heavy bets, because you'll lose money on those bets more often than not.\n\nYou'll need to find new ways of making friends. College is yet another school-related location that can help. Clubs help. Hobby-related activities help. \n\nRight before COVID lockdowns here in LA, I made a friend with my tattoo artist, barely knew him otherwise. He mentioned he and his friends were gonna start watching crappy 80's horror movies on the weekend. I was down. Then the lockdowns hit, and we couldn't do it. And I'm bad at making friends with new people I've barely met, so I've made no attempts to reconnect. Maybe when I get back to the tattoo shop. Goes back to point #1.\n\nMaking friends will be hard. But if you're lucky, and make enough connections, it won't be *as hard*.\n\n&nbsp;\n\n#5. \"Expect the best, prepare for the worst.\"\n\nHaving a positive outlook is healthy. If you're perpetually despondent, hopeless, and listless, you probably have depression, and that needs tending to. But ONLY having a positive outlook will lead you to trouble. You must prepare for the times when life throws a wrench into your car tire. Saving money is necessary. Blowing it all and wondering how you're gonna eat next week is pointless drama you've placed upon yourself. Get a checking account, a savings account, and a retirement account. Even if you only put $10 / week into the thing, AND LEAVE IT THE HELL ALONE, you'll likely have a nice rainy day fund when the shit hits the fan. \n\nLiving in a fire-prone region? make sure you have proper equipment in case wildfires become too dangerous. Earthquake kits, first aid kits, bottled water, blankets, etc. \n\nIf you don't live in a place with reliable mass transit, best make sure you have a car that's in good working order. In that car, ensure you have a fresh spare tire (replace tires every 5 years, unless otherwise indicated by professionals). Know how to change a tire: loosen those lugnuts FIRST, then jack up the car, remove tire, replace tire, tighten lug nuts with wrench, lower the car SLOWLY AND SAFELY, finish tightening lugnuts, etc. Know how to bleed brakes (get a friend to help). Replace wipers and fluid before the rainy season as needed. SO much car care is necessary, going back to point #1.\n\n&nbsp;\n\n#6. Kissing ass and networking are IMPORTANT.\n\nIf you think you're going to have a *remotely* successful life, you're going to be kissing a LOT of ass. It doesn't mean completely shoving your nose up someone's ass, but sometimes it might. If you are regularly on someone's radar in a good way, especially someone with an inkling of power, you're going to be one of the first people they think of for a promotion or raise or relocation to an exotic land. You're going to have to wear a lot of \"masks\" when you're around various people. Or you could just become like me and avoid that, keep your \"self respect\", and be poor and ignored. \n\nI was \"discovered\" last year. Like, legit. I was on a podcast with a coworker (I was the interviewee), and **an executive producer of one of the nation's largest morning shows** heard the podcast. He found me a month later, talked to me, and helped me get started. He gave me a lot of advice that I never used (regarding kissing ass, etc.), because I'm a fuck up. After a month, he dropped me, told me I needed to \"be my own cheerleader\". Coulda been a host on the radio in Los Angeles, but I'm not.\n\n&nbsp;\n\n#7. Hard Work & Luck.\n\nLuck starts your journey, hard work continues it. Anyone successful who doesn't say they are lucky (or outright refuses to acknowledge it) are not people to look up to. [Survivorship Bias](https://xkcd.com/1827/) is a huge factor. If you look at all the people who've worked hard and were successful, and then found everyone else who did similar, but aren't successful, you can factor in luck for the successful. Every. Single. Time. This [Veritasium video](https://www.youtube.com/watch?v=3LopI4YeC4I&vl) better explains everything.\n\n&nbsp;\n\n#8. \"No man is an island.\"\n\nYou can't do this alone. Everyone who gets anywhere in life is doing it with the help of others. They could be supportive parents. Friends who love them for who they are. Teachers that see the possibilities. Employers who see growth. Coworkers that empower their workday. Baristas at the coffee shop with a smile. Strangers on the train who hold the door for 1 extra second (don't go nuts on this one, people, there's a threshold). If you are surrounded by supportive and loving people, life, in all its difficulties and flaws and foibles, will become much less work. \n\n&nbsp;\n\n#9. Life is a game.\n\nIf you don't play, you lose. If you don't play by the rules, you lose. If you don't play well with others, you lose. No matter how much you want it or not, you're in the game. You have no choice. And your only opponent is you. Goes back to #6, and ties in with #8. And despite how shitty the game is, again, if you choose not to play, you will reap zero rewards. You might get a ball to the face, too.\n\n&nbsp;\n\n#10. Iroh\n\n[\"While it is always best to believe in oneself, a little help from others can be a great blessing.\"](https://www.youtube.com/watch?v=jZZXAvHySQ4)\n\n&nbsp;\n___\n\n#I have failed at all 10 of these points. Don't be like me.\n\n&nbsp;\n___\n\ntl;dr - read it anyway. I just gave you multiple summaries of life. I'm not summarizing my summaries, dammit! Now go out there, try to have fun, and try to find some meaning.",
+                "labl": 44,
+                "true_bin": 3,
+                "pred_bin": 1
+            },
+            {
+                "sent": "Not an elevator technician, but I can tell you some dude, at some point is going to find a kindle at the bottom of a shaft in a Toronto hotel elevator. \n\nRules to remember: \nRule #1: Always check that you zipped your carry-on and didn't leave a gap in the bottom\nRule #2: Kindles fit through small carry-on bag zipper gaps and elevator shaft gaps",
+                "labl": 321,
+                "true_bin": 3,
+                "pred_bin": 1
+            },
+            {
+                "sent": "Jar of Flies - Alice in Chains",
+                "labl": 4521,
+                "true_bin": 3,
+                "pred_bin": 1
+            },
+            {
+                "sent": "Natalie Merchant, *Tigerlilly*\n\nWu-Tang Clan, *Enter the Wu-Tang*\n\nMy Chemical Romance, *The Black Parade*\n\nPearl Jam, *Ten*\n\nStevie Wonder, *Talking Book*\n\nFrankie Goes to Hollywood, *Welcome to the Pleasuredome*\n\nDeltron 3030, *Deltron 3030*\n\nLate edit: One that I doubt most people have heard but I think fits the bill is Underworld's *Underneath the Radar*. It was their debut album and one of only two they made in this particular \"incarnation\" as Christian rockers - their third album was *Dubnobasswithmyheadman* which took them in a different direction and launched them (and their genre) into the mainstream. Most people consider that their \"real\" first album, and it's a legitimate classic, but *Underneath* is a remarkably well-produced and consistently solid album from start to finish. Highlights are \"Glory! Glory!\", \"Rubber Ball (Space Kitchen)\", and the title track.",
+                "labl": 2310,
+                "true_bin": 3,
+                "pred_bin": 1
+            },
+            {
+                "sent": "U2, The Joshua Tree\n\nMiles Davis, Kind of Blue\n\nStevie Ray Vaughn, Couldn\u2019t Stand the Weather\n\nStevie Wonder, Songs in the Key of Life\n\nMetallica, Ride the Lightning",
+                "labl": 1311,
+                "true_bin": 3,
+                "pred_bin": 1
+            },
+            {
+                "sent": "Reign in Blood by Slayer",
+                "labl": 626,
+                "true_bin": 3,
+                "pred_bin": 1
+            },
+            {
+                "sent": "I have one on the back of my hand from rubbing the skin off with a pencil eraser longer than the other kid did when I was 13 just to prove I was \"tough\"",
+                "labl": 17972,
+                "true_bin": 3,
+                "pred_bin": 1
+            },
+            {
+                "sent": "Tripped over a fucking football and destroyed my nose and forehead.\n\nIt didn't leave a scar but I think It has something to to with the fact that I basicly can't smell anything.\n\nThis happend when I was 6",
+                "labl": 179,
+                "true_bin": 3,
+                "pred_bin": 1
+            },
+            {
+                "sent": "Getting my bulldog jealous because of some random doll laying on the ground, making her think that I would try to snatch it from her, and get bite in the left ear by yawning. Legit.",
+                "labl": 258,
+                "true_bin": 3,
+                "pred_bin": 1
+            },
+            {
+                "sent": "All that held me back was the feeling of guilt for how my family would feel.\n\nI couldn't do it to them.",
+                "labl": 26110,
+                "true_bin": 3,
+                "pred_bin": 1
+            },
+            {
+                "sent": "After my second attempt, I spent 2 weeks in hospital. They fed me coal. For two fucking weeks I shit black and nurses cleaned up my shit. I killed myself but only the part that I hate. I killed everything I hate about me, cleaned the toxic ppl around me. One day, I just said to myself \"No, you won't go anywhere like this. You will have what you deserve and if they don't give it to you, you will fucking take it. You will quit smoking, begin sports, get mental and physical strength. You won't just be nice and wait ppl to give it to you anymore. You will fucking take it.\" So it was my anger, it saved me actually.",
+                "labl": 729,
+                "true_bin": 3,
+                "pred_bin": 1
+            },
+            {
+                "sent": "It sounds so dumb but I truly think that the fear of the unknown is the only thing that saved me. Obviously we don't really know what if anything happens after death and honestly almost every religion's idea of an afterlife or the atheist belief that you just stop existing all seem pretty shitty to me compared to just living a crappy life on Earth\n\nlike sure I may be dead inside but at least if I stay on Earth I get things like video games and YouTube and those few other things that I can still find enjoyment in",
+                "labl": 113,
+                "true_bin": 3,
+                "pred_bin": 1
+            },
+            {
+                "sent": "Bill didn\u2019t cheat on Hilary, they have an \u201copen marriage\u201d where they can do what the want whilst travelling around for work.\n\nReason for the infidelity lie? It\u2019s easier for the American population to accept a president making a \u201cmistake\u201d in fidelity than to accept a swinging President/First Lady.",
+                "labl": 316,
+                "true_bin": 3,
+                "pred_bin": 1
+            },
+            {
+                "sent": "The third shot that hit JFK was fired by a Secret Service member. But, it was entirely an accident.\n\nThe motorcade surrounding him was full of secret service. Some were standing up on the seats. When the first shot was fired, they were all on high alert, fingers on the trigger, looking around. The drivers all hit the breaks. A guy standing up in the back lurched forward and pulled the trigger by accident. This shot hit the president. He had already been hit twice and was pretty much toast, so it didn't matter. But they covered it up.\n\nI like it as a conspiracy theory because it reduces such an important mystery to a pure human accident. Which is what a lot of historical events are.",
+                "labl": 1001,
+                "true_bin": 3,
+                "pred_bin": 1
+            }
+        ]
+    }
+]

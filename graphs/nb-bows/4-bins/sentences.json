@@ -1,0 +1,871 @@
+[
+    {
+        "correct": [
+            {
+                "sent": "Do you want a Holy War? Because that's how you get a Holy War.",
+                "labl": 26069,
+                "true_bin": 1,
+                "pred_bin": 1
+            },
+            {
+                "sent": "It\u2019s been 7 years since the creator of gifs confirmed the correct pronunciation of the word. This just proves that nobody on the internet has forgiven him.",
+                "labl": 474,
+                "true_bin": 1,
+                "pred_bin": 1
+            },
+            {
+                "sent": "Get back here and answer for children with cancer, you motherfucker!",
+                "labl": 362,
+                "true_bin": 1,
+                "pred_bin": 1
+            },
+            {
+                "sent": "God is just a title to signify his level of power, his proper name is different depending on how you believe. Jehovah, Yahweh, Allah, Zarathustra, etc.",
+                "labl": 11,
+                "true_bin": 1,
+                "pred_bin": 1
+            },
+            {
+                "sent": "FIVE battles with cancer during her term. Rest in peace!\n\n&#x200B;\n\nEDIT: lol the dozens of you commenting/messaging me saying how her passing is somehow a victory for the Republicans or Trump should take a long, hard look at yourselves.",
+                "labl": 22928,
+                "true_bin": 1,
+                "pred_bin": 1
+            },
+            {
+                "sent": "All politics aside. She was an extraordinary human being who did extraordinary things. RIP Justice Ginsburg.",
+                "labl": 918,
+                "true_bin": 1,
+                "pred_bin": 1
+            },
+            {
+                "sent": "Republicans fought tooth and nail to prevent a supreme court justice being appointed in an election year 4 years ago\n\nTime to see hypocrisy of the highest order from McConnel. \n\nAnd not a single conservative will care. No matter how far the courts are stacked.",
+                "labl": 6451,
+                "true_bin": 1,
+                "pred_bin": 1
+            },
+            {
+                "sent": "Damn. Cancer needed five tries to take her down. It gave her hell but she spat it right back.",
+                "labl": 155,
+                "true_bin": 1,
+                "pred_bin": 1
+            },
+            {
+                "sent": "After months of negotiations the Koalas and Kangaroos are now our allies.  We had to give the Kangaroos half of Sydney as part of the terms.  The large emus left in Sydney are ostrichsized.  Some of them are emuvable.",
+                "labl": 18090,
+                "true_bin": 1,
+                "pred_bin": 1
+            },
+            {
+                "sent": "This is a bit silly, but gave me a great feeling of satisfaction. Due to the bad economy and poor money management, my parents have moved into the spare room of the house my husband and I bought a year ago. Things are mostly smooth, tho I\u2019m not the closest to them for several reasons I won\u2019t go into here. \n\nThe other evening I was out gardening (because it\u2019s hot during the day and we have the luck of having a streetlight right next to our front yard, keeping it pretty well illuminated even after sundown, I mostly garden at night), and I thought I had gotten the hose twisted, as it kept getting stuck. This went on for a bit, when I realized that it wasn\u2019t stuck, but being pulled. I looked into the dim area just past the illumination of the street light and spied my father, crouched over and tugging the hose. Well I did the only reasonable thing to do, and I sprayed him. He yelled and ran inside with me chasing. \n\nOnce he got inside he made a face and goes \u201cYou can\u2019t get me now! I\u2019m inside!!\u201d In that father-to-daughter-don\u2019t-you-make-a-mess tone of voice.\n\nI readied my hose, looked him in the eye and said, \u201cIt\u2019s my house.\u201d And just fucking let loose with the hose. He was soaked. Worth cleaning up the mess for that moment of true fear in his eyes.\n\nEdit: thanks for all the appreciation! I\u2019m glad my silly story made your day better!!",
+                "labl": 5819,
+                "true_bin": 1,
+                "pred_bin": 1
+            },
+            {
+                "sent": "I started working for a welding company as an engineering manager. We were selling an extremely complex weldment (pressure tank that goes under the shitter) for 4.9K, out costs were 9.3K.  The owner took the bid \"to get in with this big company\". The owner legit said \"we'll make it up in volume\"... We weren't.\n\nAnyway the buyer for the larger company was a huge bitch and would regularly yell on phone calls. We sent them a letter that we would honor the last 5 tanks on the current PO at the same price (I didn't even want to do that) but after that they were going up to 10K per.\n\nShe drove down with her boss the next day and demanded an explanation and threatened to pull the business. I replied that we were losing 5K per tank and couldn't do it anymore. She demanded evidence which I already had pulled up and simply turned on the projector. I said, as you can see we cannot continue to make this part at such a huge loss and I don't think anyone can make it for the original price, so if you have to pull the business we understand. \"\n\nHer boss tripped over himself cutting her off and said they weren't pulling out and actually thanked us for honoring the current PO. I didn't have many run ins with her after that.",
+                "labl": 2825,
+                "true_bin": 1,
+                "pred_bin": 1
+            },
+            {
+                "sent": "When my shitty father kicked me out of the house and then demanded he have access to my bank to \"control my financial situation\" and I got to tell him \"you have no control over me anymore. You set me free when you kicked me out and now you cant do shit\"",
+                "labl": 17077,
+                "true_bin": 1,
+                "pred_bin": 1
+            },
+            {
+                "sent": "Yesterday, HR asked me if I wanted to use my own personal time for punching in 5 minutes late or if I wanted to take a tardy. My response was, \"I'm not taking shit because I was within the 7 minutes allowed under the resolved class action settlement.\" Unions are great.",
+                "labl": 449,
+                "true_bin": 1,
+                "pred_bin": 1
+            },
+            {
+                "sent": "Just last week we had another supervisor from a different department come and tell us what he needed(not uncommon in my job) like \"oh I need this by this date\" but we're super swamped right now and my coworker said \"oh we can probably get to that next week because we are working on another project\" and the supervisor said \"this needs to be done now\" and my coworker said \"we'll do it in 3 weeks, sorry!\" And there's really nothing the other supervisor can do.",
+                "labl": 654,
+                "true_bin": 1,
+                "pred_bin": 1
+            },
+            {
+                "sent": "After dumping me my ex reached out to express her opinion of the woman I was dating and how it wouldn't last because she's awful.\n\nAwful enough for me to marry her and have a kid apparently",
+                "labl": 430,
+                "true_bin": 1,
+                "pred_bin": 1
+            },
+            {
+                "sent": "Lady at a convenience store threw a fit because the POS terminal asked for her ID when she was buying cigarettes. As in, it needs to be scanned to go any further. She started screaming how she didn't need one, and she was clearly was old enough to buy. She refused to give them her ID. So the clerk just looked at her and with a deadpan look said \"alright, have a nice day then. I can help the next customer over here!\" and then, with a smile on the clerks face told the lady \"ma'am you're going to have to scooch over a bit so I can help these customers. Thanks!\" Lady threw a bigger fit and started screaming some more. Clerk kept ignoring her and the manager came out to see what was going on. Tried to calm the screaming lady down but she wasn't stopping. Manager said \"Sorry, but we don't serve children unless accompanied by an adult. You need to leave my store before I call the cops.\" Screaming lady said \"I am a cop you idiot.\", manager replied \"yeah, cops get arrested all the time, you're not a special case.\" Lady just stared at her for 10 seconds, as if she was ready to fight before just deflating and finally leaving.\n\nAll this shit over a pack of cigarettes.",
+                "labl": 288,
+                "true_bin": 1,
+                "pred_bin": 1
+            },
+            {
+                "sent": "My dad had just finished his 4 years in the army when a higher up saw him out and about with his bdu pants and a rock Tee on. The higher up started to yell at him about why he wasn't dressed up and my did flipped him off and said he had been out for weeks. Must be refreshing",
+                "labl": 232,
+                "true_bin": 1,
+                "pred_bin": 1
+            },
+            {
+                "sent": "Heavy update there yet?",
+                "labl": 389,
+                "true_bin": 1,
+                "pred_bin": 1
+            },
+            {
+                "sent": "Stock prices in 2025, save up to buy a share. Profit",
+                "labl": 24672,
+                "true_bin": 1,
+                "pred_bin": 1
+            },
+            {
+                "sent": "2020 election results lol",
+                "labl": 2914,
+                "true_bin": 1,
+                "pred_bin": 1
+            },
+            {
+                "sent": "Well, I went to Reddit and found this post. Hello from 2015!",
+                "labl": 19978,
+                "true_bin": 1,
+                "pred_bin": 1
+            }
+        ],
+        "incorrect": [
+            {
+                "sent": "Jesus is actually pronounced Yeshua. I doubt he would care.",
+                "labl": 541,
+                "true_bin": 1,
+                "pred_bin": 2
+            },
+            {
+                "sent": "People's names are their own, and the owner of the name is the exclusive authority on its pronunciation. Anyone who doesn't listen to someone when they inform how to pronounce their name is an asshole.",
+                "labl": 154,
+                "true_bin": 1,
+                "pred_bin": 2
+            },
+            {
+                "sent": "... Fuck.",
+                "labl": 12039,
+                "true_bin": 1,
+                "pred_bin": 2
+            },
+            {
+                "sent": "Yeah, a megathread is probably best for this. RIP to her.",
+                "labl": 3795,
+                "true_bin": 1,
+                "pred_bin": 2
+            },
+            {
+                "sent": "It\u2019s so hard... *sniffs* some days we just cant get our milo because the emus have placed road blocks from Darwin to Cairns. At night we cant sleep with the gun fire going off in the background. We\u2019ve taken to poisoning the emus food supplies with large spoonfuls of vegemite. (If you ever eat vegemite, THINLY spread it over toast or bread, THINLY) just last week we found that the emus had recruited some dingos. *starts to cry* and me younger brother was eaten by \u2018em. *starts bawling*.............*suddenly stops crying* but enough about me, how ya goin\u2019?",
+                "labl": 9,
+                "true_bin": 1,
+                "pred_bin": 2
+            },
+            {
+                "sent": "The guy that i'd gone on a few dates with introduced me to his parents, things went well, or so i thought. \n\nhe drives me home, we end up talking and drinking a few beers, i didn't want him on the road with any alcohol in his system, and i enjoyed his company, so we end up hanging out until 3am. His mom starts blowing up his phone, demanding that he comes home, so he drives himself home to find that he's been locked out of his house. His mom said that he can sleep outside, he shouldn't be spending time with someone like me (still don't know what she meant by that), and that i'm \"just another stop on the pussy train\". He tells her not to talk about me like that, to which she says \"when you're under my roof, i'll say whatever i want about whoever i want!\"  so he picks up his phone, calls me, asks if he can stay at my place for a little while. \n\nIt's been seven years, we're engaged, have a dog, a cat, and a happy life. \n\ni also plan on throwing some subtle train themes into the wedding/celebration after the end of the plague.",
+                "labl": 6846,
+                "true_bin": 1,
+                "pred_bin": 2
+            },
+            {
+                "sent": "Was pulled over by AZDPS and they tried to ticket me for speeding... on a highway smack dab in the middle of an Indian reservation. He asked to see my ID, my registration, and to search my car. All no\u2019s. \u201cOk sir have a great day\u201d",
+                "labl": 383,
+                "true_bin": 1,
+                "pred_bin": 3
+            },
+            {
+                "sent": "Hey OP cherish 2015 while you can OK?",
+                "labl": 34730,
+                "true_bin": 1,
+                "pred_bin": 2
+            },
+            {
+                "sent": "GTA VI release date",
+                "labl": 7517,
+                "true_bin": 1,
+                "pred_bin": 2
+            },
+            {
+                "sent": "If I had unlimited searches I'd probably look up the Reddit frontpage first.\n\nThere's a lot of information in there that would give a good general explanation about that timeperiod. And from there on I could search up anything that seems interesting while already having some context.",
+                "labl": 986,
+                "true_bin": 1,
+                "pred_bin": 2
+            },
+            {
+                "sent": "B because if you get over the fact they're condescending they would correct evry mistake you ever made and you'd be fucking perfeft\n\n\nEdit: now see if I had a smart ass ghost I wouldn't have spelt perfect as perfeft.\n\nEdit 2: now see if I really did have a smart ass ghost I wouldn't have corrected only 'perfeft' but also evry",
+                "labl": 122,
+                "true_bin": 1,
+                "pred_bin": 2
+            },
+            {
+                "sent": "The movie \"Juno\". Jennifer Garner's character is at first portrayed as a \"square\", then you realize she's a mature adult and her husband is a man-baby.",
+                "labl": 12934,
+                "true_bin": 1,
+                "pred_bin": 2
+            },
+            {
+                "sent": "A Christmas Story....you'll shoot your eye out!!!",
+                "labl": 356,
+                "true_bin": 1,
+                "pred_bin": 3
+            },
+            {
+                "sent": "\"I have a right to online privacy\"",
+                "labl": 20918,
+                "true_bin": 1,
+                "pred_bin": 4
+            },
+            {
+                "sent": "**Money**\n\n* Save it. Even if it's a little bit. You don't need the latest and greatest of every widget to exist. Remember at one point your widgets were the greatest, don't try and keep up with your neighbors.\n\n&#x200B;\n\n**Relationships**\n\n* Don't burn bridges, no matter how obscure they are. It might be satisfying to get shit off your chest and tell people off as you're leaving a gig or a job, but it's a really small world. Really. You will be shocked at how connected everyone is these days and who talks to who. \n* Be kind.\n* Read Dale Carnegie's book How to Win Friends and Influence People. There are some audio book versions on youtube you can listen to. Some of the examples are out of date (like letters and calling cards...) but the sentiment is not. It is single handedly the keys to success in interpersonal relationships at work, school, or in your love life. \n* Listen more than you talk, and don't just wait for your time to talk in a conversation.   \n\n\n**Self Help / Self Improvement**\n\n* Always improve.\n* Read a book. \n* Keep a journal occasionally. It's good for reflection on how far you've come.   \n\n\n**Sex**\n\n* Is awesome.\n* babies are forever. Use protection if you\u2019re not ready for them. I love mine, but I am 30 - you might not want a baby until later if you even want one at all. \n* Don't put it on a pedestal. If it's the only reason you're into someone, chances are that relationship isnt going to last.\n* STDs are mostly permeant, just wear a condom or make your partner wear one...\n* People have sex, don't shame people for the number of partners they have had (or haven't?). In fact, nothing good comes out of even asking someone you're interested in the question of how many women they've slept with.    \n\n\n**Cars**\n\n* you don't need the greatest car in the world. \n* don't waste your money on a new car.  1 owner trade in if you're looking for new fancy tech. 7 year, 70k mile, $7k price tag is about the car you should be chasing. \n* learn how the car works\n* dont be afraid to get a second estimate for car repairs\n* car insurance is stupid expensive, and the \"it drops at 25\" is a myth. \n* don't let people borrow your car. you're liable for whatever happens. \n* don't cheap out on tires or brakes. if you have tire/ brake problems with your car, get them fixed.  \n\n\n**Drugs / Alcohol**\n\n* if you do drugs, don't make it your life. pot is not a lifestyle, it's a drug. nobody likes \"that guy\" who doesn't shut up about drugs. same goes for booze / liquor.\n* some shit will seriously ruin your body, just be careful \n* learn your limits and stay within them while drinking. nobody likes a drunk. \n* dont get behind the wheel of a car after drinking - this WILL ruin your life. have a plan. a $200 dollar taxi trip is wayyy cheaper than bail + legal fees for DUI/DWI.  \n\n\n**Job Satisfaction**\n\n* don't stay in a job you hate. \n* find something you can enjoy. it sounds silly but it helps to find something positive about your line of work. if you can't, work towards a new career. \n* value yourself and your time. dont let work walk all over you.   \n\n\n**Clothes**\n\n* wash them, learn to do laundry regardless of what gender you are\n* dont worry about brands. buy brands because they are quality, and last - don't buy clothes that have excessive rips and tears (oh god i sound old... i promise they were super cool to me when I was a teen) clothes get really expensive\n* buy something dressy, but not too flashy. Button down with a tie, matching slacks, a belt, and some dress socks/shoes. make sure it fits. if you can afford it, get something dark/neutral colored for attending funerals, and something pleasant for attending weddings. These clothes don't have to be really expensive.   \n\n\n**Mental Health / Fitness**\n\n* check in on your friends. vent to professionals, not to your friends.\n* smile often, it helps. \n* life is awesome, it gets better, and this too shall pass. time really does heal all wounds, it may be miserable now but it will get better. \n* Go for a walk every now and then. Go to the gym if you want to. You don't need to be a gym rat to be in decent shape.\n* Abs are made in the kitchen, not on the ab roller or crunch machine. Don't eat like shit, because you can't out train a bad diet.",
+                "labl": 549,
+                "true_bin": 1,
+                "pred_bin": 2
+            },
+            {
+                "sent": "It's called marriage.",
+                "labl": 24999,
+                "true_bin": 1,
+                "pred_bin": 2
+            },
+            {
+                "sent": "My GF is a dentist, and I'm a doctor, and we're both going to get on the same HSA plan. It's pretty hot.",
+                "labl": 1835,
+                "true_bin": 1,
+                "pred_bin": 2
+            },
+            {
+                "sent": "One of my baseball coaches when I was a kid lost his glass eyeball in the elevator shaft. Maintenance guy gave a solid WTF.",
+                "labl": 1118,
+                "true_bin": 1,
+                "pred_bin": 2
+            },
+            {
+                "sent": "Bundle of ~~Watchmen~~ Watchtower magazines (Jehovah's witnesses pamphlets) wrapped in duct tape. Inside it was a Rossi .44 Special revolver and a screwdriver.",
+                "labl": 14019,
+                "true_bin": 1,
+                "pred_bin": 2
+            },
+            {
+                "sent": "Supertramp-Breakfast in America",
+                "labl": 4416,
+                "true_bin": 1,
+                "pred_bin": 2
+            },
+            {
+                "sent": "Gorillaz: Demon dayz. Outkast: Aquemini.\n\nEdit: Apologies if I did this wrong.(I'm bad at the internet.) But thanks for all of the votes and awards!\nMusic is an art form and subjective so none of these posts are wrong and I found some good ones on here! \n\nIf I had to round out my top 5: Beck: morning phase(anything he does is amazing.) Daft punk:Homework and R.E.M: Automatic for the people.\n\nI have to show my fellow gamers some love as well.\n\n Mega man 2&3, borderlands 2&3(could sit in the main menu just for the music.)Hollow Knight,Metroid Prime, and Zelda: A link to the past.\n\nMuch love to the internet and have a good day!!!",
+                "labl": 4198,
+                "true_bin": 1,
+                "pred_bin": 2
+            }
+        ]
+    },
+    {
+        "correct": [
+            {
+                "sent": "I'll sum it up in two words\n\"fucking scary\"",
+                "labl": 5,
+                "true_bin": 2,
+                "pred_bin": 2
+            },
+            {
+                "sent": "Not a movie but Fresh Prince of Belair. When I was a kid I thought Uncle Phil was sooooo mean. As an adult I\u2019m like, I\u2019d be fed up with all the antics too!!\n\nedit: ow oof my inbox",
+                "labl": 28681,
+                "true_bin": 2,
+                "pred_bin": 2
+            },
+            {
+                "sent": "\"There's plenty more fish in the sea\" won't make any sense.\n\nEdit. This comment doesn't really answer OP's question. I'd delete it but some of the responses are pretty good.",
+                "labl": 18008,
+                "true_bin": 2,
+                "pred_bin": 2
+            },
+            {
+                "sent": "I tell my wife I married her for the dental.  I told her this before I married her, I told her this in my proposal, I reiterated it in my wedding vows, and I'm telling her right now that I'm telling reddit.  It will never not be funny to me.  It has never been funny to her.",
+                "labl": 163,
+                "true_bin": 2,
+                "pred_bin": 2
+            },
+            {
+                "sent": "Well over 1500 tax returns at the bottom of the ATO's north brisbane office elevator shaft.",
+                "labl": 14407,
+                "true_bin": 2,
+                "pred_bin": 2
+            },
+            {
+                "sent": "Not necessarily a \"good guy\", but got lots of positive attention from the release of the Greatest Showman- apparently PT Barnum was a terrible person in real life",
+                "labl": 52721,
+                "true_bin": 2,
+                "pred_bin": 2
+            },
+            {
+                "sent": "This thread reads like the Oatmeals greatest hits.",
+                "labl": 2335,
+                "true_bin": 2,
+                "pred_bin": 2
+            },
+            {
+                "sent": "Joseph P. Kennedy, dad of John, Bobby, and Teddy had one of his daughters lobotomized. She was likely autistic but was considered an \"embarrassment to the family\".",
+                "labl": 11244,
+                "true_bin": 2,
+                "pred_bin": 2
+            },
+            {
+                "sent": "The repetition makes you lose time.   Having the same job, workout regimen, schedule in general makes days blend into one another\n\n\nEdit: autocorrect.  Should have said workout instead of without. Bland to blend. Regime to regiment...to regime. My GAWD, did I spell anything correctly?!? \n\n\nEdit.  Thanks for all the replies.  I just want to point out I didn't mean life becomes boring.  I was just talking about lack of those major separators we had as children like summer vacation, new school, your first kiss, etc. Due to those major separators missing I don't recall if I did something a year ago or 3 years ago. It's a little blurry if something happened 2 weeks ago or 4 months ago.  This is because once you have a career and a home you're doing a lot of similar things most days(work, chores, cooking,  hobbies, etc).  This is why the days start to blend into one another, at least in your memory.",
+                "labl": 16220,
+                "true_bin": 2,
+                "pred_bin": 2
+            },
+            {
+                "sent": "Bills.... Grocery shopping... Budgeting ... Life....",
+                "labl": 167,
+                "true_bin": 2,
+                "pred_bin": 2
+            },
+            {
+                "sent": "I got cut by a vacuum. A fucking VACUUM.",
+                "labl": 13893,
+                "true_bin": 2,
+                "pred_bin": 2
+            },
+            {
+                "sent": "7 year old me was \"helping\" my mum iron clothes, I pulled on the cord, the iron fell and smacked me right in the face. I still have a scar above my right eye.\n\nedit: who the fuck gave this a wholesome award cmonBruh",
+                "labl": 13123,
+                "true_bin": 2,
+                "pred_bin": 2
+            },
+            {
+                "sent": "I have multiple scars on my thumbs from slicing my thumb open on cans of ravioli and spaghetti-o's",
+                "labl": 252,
+                "true_bin": 2,
+                "pred_bin": 2
+            },
+            {
+                "sent": "Well there was the time I jumped on a dead branch about 4-5m up a tree to see what could happen. I fell surprisingly and got a stick stuck in my leg. I'm okay.\n\nOr maybe when I walked across the head of a sofa to see how good my balance was. It wasnt good enough and I fell through the window and got glass stuck in my hip. I'm okay.\n\nOr maybe when I was wee I ran head first through a door while my granny was closing it. It was one of those heavy doors you cant exactly stop easy. Cracked my head open. I'm okay.\n\nOr maybe the time I tried to do a backflip at a pool. I cant backflip. I shockingly cracked my head off the pool side. Im okay.\n\nOn review of the above I'm not sure if I am okay. Physically yes but mentally, no.",
+                "labl": 20,
+                "true_bin": 2,
+                "pred_bin": 2
+            },
+            {
+                "sent": "I couldn't leave my dog.",
+                "labl": 2705,
+                "true_bin": 2,
+                "pred_bin": 2
+            },
+            {
+                "sent": "Knowing that I would put my family through the same hell my father put us under.",
+                "labl": 651,
+                "true_bin": 2,
+                "pred_bin": 2
+            },
+            {
+                "sent": "My dogs (both passed unfortunally) and knowing my sister would be the one to find me since she always was the first to come home.",
+                "labl": 204,
+                "true_bin": 2,
+                "pred_bin": 2
+            },
+            {
+                "sent": "Um ok game of thrones. Really. Not season 8, of course. Some time around season 4 or 5 (whichever came out in spring) I made a really half-assed suicide attempt and was going to try again, I just wanted to wait a week until the first episode of the new season. It came and I wanted to watch the next one. By mid-season my meds finally kicked in and the weather got really nice, so I got through.",
+                "labl": 282,
+                "true_bin": 2,
+                "pred_bin": 2
+            },
+            {
+                "sent": "Something is going on with Bryan Singer. He\u2019s been accused of sexual assault multiple times in the past few decades but nothing ever came of it. Guy was hosting parties with young men (potentially underaged boys) and people like Kevin Spacey, and has been accused of molesting children. I\u2019m not one for conspiracies but he clearly has friends in high places that went to these parties and keep giving him work and burying the allegations when they come up, or he has dirt on them. Seems like more people are finally talking about how shitty he is but I never understood why these stories didn\u2019t get more attention.",
+                "labl": 3462,
+                "true_bin": 2,
+                "pred_bin": 2
+            },
+            {
+                "sent": "I still to this day believe that for every sock that goes missing in your dryer it turns into a tupperware lid in you cabinent that fits nothing.  I have seen no evidence to disprove this.",
+                "labl": 11376,
+                "true_bin": 2,
+                "pred_bin": 2
+            },
+            {
+                "sent": "High end art is a scheme to launder money and avoid taxes.",
+                "labl": 7739,
+                "true_bin": 2,
+                "pred_bin": 2
+            }
+        ],
+        "incorrect": [
+            {
+                "sent": "She\u2019s earned her rest. I wish she could have held on a little longer but this woman fought hard for our rights and endured much on a personal level. RIP.\n\nEdit: thank you for the silver",
+                "labl": 754,
+                "true_bin": 2,
+                "pred_bin": 1
+            },
+            {
+                "sent": "Them long necked fuckers are just waiting for the opportune moment! Considering our country is weakened, and divided by Covid they are more than likely about to make a move in the coming weeks",
+                "labl": 10096,
+                "true_bin": 2,
+                "pred_bin": 1
+            },
+            {
+                "sent": "We've kind of reached a balance of mutually assured destruction. We don't bring in the tanks and nukes, they don't bring in the cassowarys and drop bears.",
+                "labl": 22761,
+                "true_bin": 2,
+                "pred_bin": 1
+            },
+            {
+                "sent": "Pretty brutal really. My dad was attacked by an emu once. He is bald and his head is a little shiny. he was sitting on a bench at a wildlife park and The emu must have been attracted to the shiny reflection, snuck up behind him and bit his head. I have never seen someone jump so far in one leap before or since. As a child this traumatised me a little and now I am pretty uneasy around all kind of birds.",
+                "labl": 27325,
+                "true_bin": 2,
+                "pred_bin": 1
+            },
+            {
+                "sent": "A co-worker friend of mine was flying back from a sales conference in Vegas and he was able to upgrade to a first class seat.  We had this bitch sales VP that was on the same flight - she was the snobby, entitled type with a full time nanny and giant McMansion in the suburbs, and she generally treated people who worked for her like servants.\n\nShe sees him in a first class seat as she is making her way to coach and asks him how he got that seat (he used points to upgrade).  As people are getting settled in, she makes her way back up to the first class cabin and asks to speak with the lead flight attendant.  She tells him that one of her underlings is sitting in first class, and that she needs to switch with him since she's higher on the corporate ladder.  \n\nThe guy can't believe what he's hearing, but she won't take no for an answer.  Finally he tells her she has to go back to her seat, or she will be escorted from the plane.  She made a complete ass of herself in front of the whole first class cabin.",
+                "labl": 42116,
+                "true_bin": 2,
+                "pred_bin": 3
+            },
+            {
+                "sent": "I grew up fairly poor. In some of my HS classes there was a very rich girl who liked to lord power over people. She had the teachers convinced she was a saint, though. One day she and I got into an arguement and we were sent to the vice principal's office. I thought I was doomed. Low and behold, the vp wasn't there that day and the art teacher was filling in for this sort of thing. We told him what happened and I mentioned that she acted like she was better than everyone else because she has nice clothing and money. She yelled that I was a liar and the art teacher said \"you do act like you own the place\". She was shocked and shut the hell up. Knowing someone finally believed me was just blissful.",
+                "labl": 472,
+                "true_bin": 2,
+                "pred_bin": 1
+            },
+            {
+                "sent": "My first job was at the box office of a movie theatre. The rule was you had to be 18 to see a Rated R movie but you could go see if a parent/guardian was somewhere in the building seeing a different movie. A mom tried to buy tickets for her daughter and friends to go see one. I explained the rules and she was enraged. She demanded to see the manager who explained the rules and refused the sale. Finally, she tried to claim that the sale should happen because her husband is a doctor. I just laughed.",
+                "labl": 315,
+                "true_bin": 2,
+                "pred_bin": 1
+            },
+            {
+                "sent": "My name + obituary. \n\nIf I get more searches? 2020, 2024 election results. COVID vaccine FDA approval parent company. TSLA, GOOG, APPL, FB prices.",
+                "labl": 4726,
+                "true_bin": 2,
+                "pred_bin": 1
+            },
+            {
+                "sent": "Hentai",
+                "labl": 1039,
+                "true_bin": 2,
+                "pred_bin": 1
+            },
+            {
+                "sent": "Mrs. Doubtfire but relating more with Miranda than Daniel. As a kid I didn\u2019t understand why she lost her shit when she came home to the petting zoo.",
+                "labl": 3129,
+                "true_bin": 2,
+                "pred_bin": 1
+            },
+            {
+                "sent": "Bert from Sesame Street. Dude just wants to read a book and get some sleep.",
+                "labl": 112,
+                "true_bin": 2,
+                "pred_bin": 3
+            },
+            {
+                "sent": "Don't be afraid to fail at things. Just getting into my 30s and I am finding the new generation seems to be afraid of being bad at something to the point of not trying new things. Go and try! Obviously there are things to be cautious about, but take reasonable risks on things like moving, jobs, work, hobbies, etc.",
+                "labl": 287,
+                "true_bin": 2,
+                "pred_bin": 1
+            },
+            {
+                "sent": "My mom was in the navy and used to hang out with 2 married couples who were actually 2 gay couples who married each other to get better benefits lol",
+                "labl": 4629,
+                "true_bin": 2,
+                "pred_bin": 1
+            },
+            {
+                "sent": "With the high cost of medical and dental, that's even better than sex.",
+                "labl": 15896,
+                "true_bin": 2,
+                "pred_bin": 1
+            },
+            {
+                "sent": "How do you feel about a friend with benefits, but instead of sexual benefits, they just make a reddit thread with the top comment of that day's top threads?",
+                "labl": 1233,
+                "true_bin": 2,
+                "pred_bin": 1
+            },
+            {
+                "sent": "Pest control tech here, Snakes had gotten into the pit and were climbing up and dropping down on people as they rode the elevator. Good times",
+                "labl": 257,
+                "true_bin": 2,
+                "pred_bin": 1
+            },
+            {
+                "sent": "It depends on the building / neighborhood. I\u2019ve seen everything from dirty diapers, to used needles... keys, wallets, phones, picture frames, sandwiches, and I guess the icing on the cake was a tomagachi. \n\nNo, it didn\u2019t work. So we typically just trashed everything unless it was valuable. I always turned jewelry into the managements office but I worked with guys who def sold valuables for unsavory purposes. \n\n\nTLDR; that crack between the car and the door sill is a black hole for objects",
+                "labl": 281,
+                "true_bin": 2,
+                "pred_bin": 1
+            },
+            {
+                "sent": "Cargo weapons elevator tech for the USN here. During maintenance of the aft elevator shaft once I found a bunch of used condoms, and a valve handle. The strange thing was the the valve handle was for a valve in the anchor windlass. That\u2019s at the front end of the ship. When we went to put the valve handle back we found more used condoms. We weren\u2019t surprised at that point.\n\nEdit: lol I was on a co-Ed ship.",
+                "labl": 20,
+                "true_bin": 2,
+                "pred_bin": 1
+            },
+            {
+                "sent": "Once I got to the fourth comment about purple dildos I\u2019m out.",
+                "labl": 273,
+                "true_bin": 2,
+                "pred_bin": 1
+            },
+            {
+                "sent": "Back to Black - Amy Winehouse",
+                "labl": 3118,
+                "true_bin": 2,
+                "pred_bin": 1
+            },
+            {
+                "sent": "Kate Bush - Aerial\n\nMika - Life in Cartoon Motion\n\nVampire Weekend - Contra\n\nTalking Heads - Speaking in Tongues \n\nStromae - Racine Carr\u00e9e \n\nTaylor Swift - 1989\n\nSufjan Stevens - Carrie and Lowell\n\nThe Avalanches - Since I Left You\n\nLorde - Melodrama \n\nKacey Musgraves - Golden Hour",
+                "labl": 363,
+                "true_bin": 2,
+                "pred_bin": 1
+            }
+        ]
+    },
+    {
+        "correct": [
+            {
+                "sent": "Cake - Fashion Nugget",
+                "labl": 2826,
+                "true_bin": 3,
+                "pred_bin": 3
+            },
+            {
+                "sent": "I punched a pint glass one night when I was drunk back in college. \n\nIt ended up slicing my finger *really* badly, like there was a flap of skin that came up. Went to the bathroom and ran it under water, but it just kept bleeding. I didn't know what to do and was too drunk to try to deal with it, so I just wrapped my hand in a towel and tried to go to sleep.\n\nWoke up to knocking at my door and it ended up being security. He followed a trail of blood from the bathroom to my room and wanted to make sure I was alright. I showed him my finger and he was like, \"Come on, you gotta go to the hospital.\" Dude was a bro and drove me there even though it was like 3am. Saw a doctor and he had to give me a bunch of stitches. He said I was very lucky because if it was just a tiny bit deeper I would have probably had done permanant damage and lost mobility of the finger.\n\nNow I have\u00a0[this scar on my finger shaped like a Nike swoosh](https://i.imgur.com/cEhQRG0.jpg)\u00a0to remind me not to be stupid and try to fight glass.",
+                "labl": 1082,
+                "true_bin": 3,
+                "pred_bin": 3
+            },
+            {
+                "sent": "Joseph P. Kennedy, dad of John, Bobby, and Teddy had one of his daughters lobotomized. She was likely autistic but was considered an \"embarrassment to the family\".",
+                "labl": 11244,
+                "true_bin": 3,
+                "pred_bin": 3
+            },
+            {
+                "sent": "My uncle sometimes randomly talks Japanese in his sleep. He is white and from wisconsin and has only rewatched a couple of animes",
+                "labl": 1031,
+                "true_bin": 3,
+                "pred_bin": 3
+            },
+            {
+                "sent": "I'm the sleep walker/talker. Sooooo many stories people have shared with me. Here's a few...\n\nHubby and his cousin were in the living room playing a video game. I came out and started yelling about how nasty the floor was. They ended up stopping their game and sweeping and mopping thinking I was awake and really mad, even though i was sleep walking. \n\nMy mom said I used to go in her room some nights and and just stand by her bed and stare at her. She'd wake up creeper tf out. \n\nMy dad found me lying on my back making bicycling motions with my arms and legs.",
+                "labl": 141,
+                "true_bin": 3,
+                "pred_bin": 3
+            },
+            {
+                "sent": "Lady at a convenience store threw a fit because the POS terminal asked for her ID when she was buying cigarettes. As in, it needs to be scanned to go any further. She started screaming how she didn't need one, and she was clearly was old enough to buy. She refused to give them her ID. So the clerk just looked at her and with a deadpan look said \"alright, have a nice day then. I can help the next customer over here!\" and then, with a smile on the clerks face told the lady \"ma'am you're going to have to scooch over a bit so I can help these customers. Thanks!\" Lady threw a bigger fit and started screaming some more. Clerk kept ignoring her and the manager came out to see what was going on. Tried to calm the screaming lady down but she wasn't stopping. Manager said \"Sorry, but we don't serve children unless accompanied by an adult. You need to leave my store before I call the cops.\" Screaming lady said \"I am a cop you idiot.\", manager replied \"yeah, cops get arrested all the time, you're not a special case.\" Lady just stared at her for 10 seconds, as if she was ready to fight before just deflating and finally leaving.\n\nAll this shit over a pack of cigarettes.",
+                "labl": 288,
+                "true_bin": 3,
+                "pred_bin": 3
+            },
+            {
+                "sent": "I can always kill myself, so why not keep pushing just another day?",
+                "labl": 30645,
+                "true_bin": 3,
+                "pred_bin": 3
+            },
+            {
+                "sent": "Shelly Miscavige is either dead or being held prisoner by the Church of Scientology.",
+                "labl": 21943,
+                "true_bin": 3,
+                "pred_bin": 3
+            },
+            {
+                "sent": "Not really at the present, not since February, but going to the cinema alone. First time I ever did, back in 2016 it felt weird tbh. Even had a mother ask me if I was waiting for anyone when I saw Kong: Skull Island, but now I actually prefer it most times. It means I don\u2019t have to worry about scheduling with a friend on what day\u2019s best. \n\nDon\u2019t get me wrong, I have still gone with friends but 90-95% of the time I go alone, I can do whatever I want before or afterwards, whether to look around the shops or just go straight home.",
+                "labl": 11229,
+                "true_bin": 3,
+                "pred_bin": 3
+            },
+            {
+                "sent": "Not my partner, but was on a camping trip with some friends and at midnight one of them screamed out. \"Don't forget the mountain dew!\" and he didn't remember saying it. best thing i've ever heard",
+                "labl": 200,
+                "true_bin": 3,
+                "pred_bin": 3
+            },
+            {
+                "sent": "Then all of Scandinavia will pronounce it like \"Yod\" and the Spanish will pronounce it like \"Hod\"",
+                "labl": 15799,
+                "true_bin": 3,
+                "pred_bin": 3
+            },
+            {
+                "sent": "I graduated 10 years ago from high school and none of those people are in my life now. So take your time being you and grow your self esteem and talents now over wasting time trying to impress those pricks you won't even remember in a few months after graduation. \n\nEdit: It seems like there is some confusion as to my advice. I am not saying drop your friends. Those are a very important aspect of life (especially in high school). What I am saying is drop the politics and drama of your school. I know it feels like it is the whole world now, but if you let those who try to bring you down, who mock you, who try and pressure you will not be around forever. Worry about building yourself to being the best you that you can become. I still have contact with a few childhood friends to this day (just not really any I made in high school). But all those negative, drama craving, bullies, and those down beats in general will not follow you.",
+                "labl": 21262,
+                "true_bin": 3,
+                "pred_bin": 3
+            },
+            {
+                "sent": "I quit giving a shit. I'm not well liked now. But i am liked. And that's better then before",
+                "labl": 1241,
+                "true_bin": 3,
+                "pred_bin": 3
+            },
+            {
+                "sent": "Went to a private school for a couple years, and boarded (stayed overnight) a few times. Woke up one morning to everyone looking tired af and pissed at me. Apparently I'd commentated a full football match in my sleep, with replays and full hype over the goals. Don't remember it at all",
+                "labl": 356,
+                "true_bin": 3,
+                "pred_bin": 3
+            },
+            {
+                "sent": "Best friend slept with his new girlfriend for the first time on vacation. People were sharing hotel rooms to save cash so he was in the room with 3  other girls he barely knew. Apparently in the middle of the night he yelled \u201cSHUT UP I CAN TELL IF YOU\u2019RE ACTUALLY GAY.\u201d",
+                "labl": 146,
+                "true_bin": 3,
+                "pred_bin": 3
+            }
+        ],
+        "incorrect": [
+            {
+                "sent": "Would Satan make an announcement that it\u2019s pronounced sah-tin instead of say-tin",
+                "labl": 12,
+                "true_bin": 3,
+                "pred_bin": 2
+            },
+            {
+                "sent": "happened not to me, but around me.\n\nI have a coworker/friend in a hospitality company that was pretty huuuuge. My coworker brought a lot of experience and skills to the table so many executives and bosses want him working on their projects in their departments in their umbrella of the company. When it was time for him to ask for a raise, our manager, director, and executive director turned him down and low balled him with a counter offer so insultingly low he started looking for jobs outside of the company.\n\nCFO, and other senior VPs heard about said move and reached out to him to get him to stay, and they worked it out amongst each other so they can share him in their special projects along with a hefty compensation package.\n\nCoworker being respectful puts in a request to transfer that has to be approved by the current manager, director, and executive director which they promptly turned down. To make matters worse, they go ahead and write him up for \"attendance\" problems from a couple of months ago... We're all salary, and for the most part project based.\n\nThroughout all of this, I am a fly on the wall since we shared an office, here I am laughing with him while he was in phone calls with the literal people who ran the company. He was told to ignore all that, they apologized to him, they got VP of Human Relations in on the meeting explained the situation which then launched an internal investigation unbeknownst to the 3 clowns.\n\nthe ensuing shit storm that came down onto the 3 clowns is more than enough to make this story awesome, but the cherry on top, is that he is now their boss...\n\n&#x200B;\n\n**tldr: \"management\" team tries to screw over an employee who ends up being their boss.**\n\n&#x200B;\n\n**UPDATE**: thank you for the award, and as a thank you, I will share the rest of the tea, sorry for the delay. \n\nthe way it would've worked before all this went down, is that, said executive director was gonna be promoted into a VP position and move into the big player's lounge in our main office, director which is clown#2 would've taken EXECdir spot, and clown#3 which was manager would've taken director job. \n\nThe powers that may be, CFO, senior VPs that were working behind the scenes took this opportunity to let the clowns dig a hole for themselves.  and to everybody's delight, they did. \n\nI'm going to start with the matter at hand, CFO and senior VPs told my coworker to sit tight, and they will make sure that he is taken care of, and that he from then on will be only taking instructions from them, with the VP of HR on the phone, the process of re-routing him up the chain of command went super fast. I mean why wouldn't it, the bosses who would've reviewed and approved all this have been working behind the scenes to make it happen and they are all on the phone now. My coworker was told that by the next business day he just had to fill in the proper paperwork and to send it straight to VP of HR, and formal announcements will be made to the rest of the company by the end of the week. My coworker then asked the bosses to use some of his newly granted compensation for a vacation week, just to avoid the drama.  \n\nTHIS WEEK was glorious. The clowns were busy calling my coworker, blowing up his phone. LOVING the drama that was going on, I was texting him updates. Since clown #1,2, and 3 always relied on us salaried grunts to take care of everything for them, their incompetence kept showing in their \"BIG\" projects. Projects that have to be submitted to the same CFO and senior VPs that caused all this for them. Every one of our internal clients (other departments, execs, and bosses within the company) was looking for my coworker, the incompetency of the clowns have spread across at the management level, they are all now bypassing them and going straight to us to get things done. \n\nHR was prompted by the VP of HR to start investigations in the background and we were all interviewed and sworn to secrecy. \n\nThe end of the week comes, and my coworker comes in, brand new suit, sits on his desk, and we start our usual banter.  This is supposed to be the day of the big announcement. Clown #3 calls my coworker into the office to write him up for as many things as clown #3 can. \\*\\*\\*\\*THIS I CANNOT CONFIRM because I'm only hearing this from my coworker\\*\\*\\*\\* but apparently clown#3 was putting the book down on him, and threatened termination due to the number of offenses (they wouldn't have fired him, they needed him that much)\n\nMy coworker has a habit of giving a deadpan face and just shrugging through everything that is not interesting to him, so apparently that's what he did. \n\nWhat I can confirm is that after this meeting, he showed me an email of said clown#3 scheduling a meeting with him and clown #2, and #1. WHICHHHH HE DECLINES IN FRONT OF ME...he laughs, looks at me, says watch this,  he walks out, and after some time comes back into the building with the Senior VP straight to clown#1's office Exec Dir.\n\nsome time passes and it was fun to watch Clown #2 Director, and Clown #3 Manager rush to the same office. \n\nThey were all passed over for the promotions, were not granted their raises, and now all their projects go to my coworker for approval. \n\nI no longer work for the company, after some more drama I have moved on as well. I'm still in touch with my coworker, the last update I have heard is that clown #1 and #2 exec director and director would be retiring this year after so long with the company. \n\nI heard that #3 burnt the team to the ground due to sheer incompetence, and is on the way out as well. #3 started the team with a total of 9 direct reports now down to 2.",
+                "labl": 1946,
+                "true_bin": 3,
+                "pred_bin": 1
+            },
+            {
+                "sent": "An old dude asked for my manager as soon as I came out of the back room, while I worked in the men\u2019s shoe Dept at Macy\u2019s. I think he was mad he was waiting for help for a while. We were closing so people were cleaning up and there were only 3 employees for the whole floor. Went ahead and called my manager and let him know she was on her way. He said \u201cSHE?! I want to talk to the MAN in charge!\u201d Well to his dismay... every single manager in our store was a woman up to even the store manager. He just left. Felt awesome. My manager eventually showed up and we laughed about it.\n*edited for clarity.",
+                "labl": 326,
+                "true_bin": 3,
+                "pred_bin": 1
+            },
+            {
+                "sent": "Lottery numbers the last five years ? Easy peasy",
+                "labl": 32935,
+                "true_bin": 3,
+                "pred_bin": 2
+            },
+            {
+                "sent": "The internet still exists in five years, so that\u2019s my first worry assuaged...",
+                "labl": 112,
+                "true_bin": 3,
+                "pred_bin": 1
+            },
+            {
+                "sent": "Bold of you to assume we are still gonna be alive 20 years from now.",
+                "labl": 329,
+                "true_bin": 3,
+                "pred_bin": 2
+            },
+            {
+                "sent": "The O Brother Where Art Thou soundtrack. Legitimate perfection",
+                "labl": 13635,
+                "true_bin": 3,
+                "pred_bin": 1
+            },
+            {
+                "sent": "Factorio!",
+                "labl": 16518,
+                "true_bin": 3,
+                "pred_bin": 1
+            },
+            {
+                "sent": "Henry Ford was so anti-Semitic that Hitler considered him a hero.",
+                "labl": 41340,
+                "true_bin": 3,
+                "pred_bin": 1
+            },
+            {
+                "sent": "In some aspects to the 60\u2019s and 70\u2019s when the Beatles were icons, (I\u2019m talking about John Lennon) people who use his image and face for \u201cpeace\u201d sometimes forget important details. \n\n\n-He abused women\n\n\n-He was a cheater\n\n\n-He abused his children (made one go completely deaf in one ear)\n\n\n-Total hypocrite on the \u201cno possessions\u201d when he lived one of the most lavish lifestyles of his time\n\n\n-compulsive liar\n\n\n\n-had a sexual appetite for his own mother \n\n\n-almost killed a few people (look up Bob Wooler, he was almost punched to death by John. There were others but their stories have either been disputed or unclaimed.)\n\n\n\nSo whenever I see a bunch of people sing *imagine* I just shake my head in shame cause so many people don\u2019t even know how bad he was but act like he was a saint.",
+                "labl": 5722,
+                "true_bin": 3,
+                "pred_bin": 1
+            },
+            {
+                "sent": "Declining metabolism",
+                "labl": 195,
+                "true_bin": 3,
+                "pred_bin": 2
+            },
+            {
+                "sent": "For my 8th birthday, a classmate got me something like a \"grow your own stalagmite\" kit you could buy at educational stores. Apparently, the purpose was to add water to some powder material, and use a funnel in the kit to drip it down to make your own cave features. Exciting, I know.\n\nAnyway, I kept it and the other birthday presents I got in a cardboard box in my room. Evidently, at some point, moisture got into the box *and* the plastic the powder was in, and it began expanding. Having nowhere else to go, the \"stalagmite\" material oozed its way out through the narrow slits in its box, and hardened into razor sharp edges. I found this out quite bloodily when I put my hand into my birthday box to grab another toy, and pulled it out with permanently altered fingerprints on my thumb, index, and middle fingers.",
+                "labl": 14687,
+                "true_bin": 3,
+                "pred_bin": 2
+            },
+            {
+                "sent": "When I was 5, I was spinning around in the living room and then fell face first into the coffee table. I have a scar on my forehead from that lmao",
+                "labl": 1757,
+                "true_bin": 3,
+                "pred_bin": 2
+            },
+            {
+                "sent": "My mother and brother were arguing about ice cream cone sizes, so my brother stormed off, I followed him back to a villa thing we were staying at. He didn't have a key and we didn't want to wait so I just punched through the glass in the sliding door to make an entrance. There were probably a thousand other safer ways to do it but it just seemed the quickest. Fucking ice cream cone sizes, man.",
+                "labl": 1702,
+                "true_bin": 3,
+                "pred_bin": 2
+            },
+            {
+                "sent": "Don\u2019t touch the iron it\u2019s hot!\n\nCan\u2019t be that hot!\n\nNarrator: It was.",
+                "labl": 24277,
+                "true_bin": 3,
+                "pred_bin": 1
+            },
+            {
+                "sent": "I dont understand how you guys do it, i can barely hold on anymore.",
+                "labl": 379,
+                "true_bin": 3,
+                "pred_bin": 1
+            },
+            {
+                "sent": "Women's clothes have small/non existent pockets to make us buy purses.\n\n\nEDIT: If this is enough to set you to go off on a sexist rant please reevaluate your life choices.",
+                "labl": 12939,
+                "true_bin": 3,
+                "pred_bin": 1
+            },
+            {
+                "sent": "I used to be embarassed by my dad picking up rubbish from the floor to bin when we were out as a family. I now actively go out with a litter picker in happiness and confidence that I am doing something good. Sorry dad!!",
+                "labl": 24,
+                "true_bin": 3,
+                "pred_bin": 2
+            },
+            {
+                "sent": "\nOne night, my boyfriend  woke me up in the middle of the night, tapping me on my shoulder. He put his  finger on his mouth, whispered \"shush\" to me, then pointed at the door and told me \"I can hear something, don't move\". Predictably, I nearly shit my pants. All the worst possible scenarios crossed my mind, and the moment of silence after he shushed me felt like hours. Then, he started waving his hands and talking about tetris, 'the twirlies' (idk), and making sure we don't align... And that's how I learnt my boyfriend talks in his sleep.",
+                "labl": 7910,
+                "true_bin": 3,
+                "pred_bin": 1
+            },
+            {
+                "sent": "We were freshly married and living overseas. My husband hadn\u2019t had much sleep the nights before, which usually enhances any sleep talking. It was hot in our room. My husband mumbled something which I didn\u2019t quite catch. I asked him to repeat it. He got up, opened the bedroom window and said very pointedly \u201cAir flow, Bitch!\u201d then laid back down, completely asleep. Now, my husband has never, not once, ever called me a name or even raised his voice to me, so this is particularly hilarious.\n\nEdit: you guys are FAR too kind with all the awards and upvotes! Thank you so much!!!\n\nAlso, this happened before Breaking Bad was a big thing, so maybe my husband is the original Jesse Pinkman? Except without all the meth and mayhem, of course.",
+                "labl": 38281,
+                "true_bin": 3,
+                "pred_bin": 1
+            },
+            {
+                "sent": "My uncle sometimes randomly talks Japanese in his sleep. He is white and from wisconsin and has only rewatched a couple of animes",
+                "labl": 1031,
+                "true_bin": 3,
+                "pred_bin": 1
+            }
+        ]
+    },
+    {
+        "correct": [],
+        "incorrect": [
+            {
+                "sent": "\"Oh jod\"",
+                "labl": 589,
+                "true_bin": 4,
+                "pred_bin": 2
+            },
+            {
+                "sent": "Teachers saying  \"you're not allowed to use a Wikipedia article\"",
+                "labl": 4144,
+                "true_bin": 4,
+                "pred_bin": 1
+            },
+            {
+                "sent": "Not an elevator technician, but I can tell you some dude, at some point is going to find a kindle at the bottom of a shaft in a Toronto hotel elevator. \n\nRules to remember: \nRule #1: Always check that you zipped your carry-on and didn't leave a gap in the bottom\nRule #2: Kindles fit through small carry-on bag zipper gaps and elevator shaft gaps",
+                "labl": 321,
+                "true_bin": 4,
+                "pred_bin": 1
+            },
+            {
+                "sent": "The National - Boxer",
+                "labl": 283,
+                "true_bin": 4,
+                "pred_bin": 3
+            },
+            {
+                "sent": "Lazy me liked to iron clothes while wearing them when I was twenty years old. My left arm can testify",
+                "labl": 5654,
+                "true_bin": 4,
+                "pred_bin": 1
+            },
+            {
+                "sent": "Tripped over a fucking football and destroyed my nose and forehead.\n\nIt didn't leave a scar but I think It has something to to with the fact that I basicly can't smell anything.\n\nThis happend when I was 6",
+                "labl": 179,
+                "true_bin": 4,
+                "pred_bin": 1
+            },
+            {
+                "sent": "Telling myself to suck it up and get on with it, because I have a job to do and a responsibility to the people around me. \n\nSounds counter-intuitive, but it became really motivating for me. I think a lot of my feeling depressed came from feeling useless and out of control. So when I realised I had a responsibility to make a contribution to the world and to not let other people down, it became empowering and flipped things around for me. Things still get tough, but I keep the same mindset.",
+                "labl": 514,
+                "true_bin": 4,
+                "pred_bin": 2
+            },
+            {
+                "sent": "The Lost Cosmonauts. \n\nI think it's absolutely possible that there were attempts by the CCCP to launch manned aircraft into space before Gagarin and that some of the cosmonauts died...",
+                "labl": 7273,
+                "true_bin": 4,
+                "pred_bin": 1
+            },
+            {
+                "sent": "The \"UFO\" footage that just got released recently was a purposeful distraction from current events.",
+                "labl": 3437,
+                "true_bin": 4,
+                "pred_bin": 1
+            },
+            {
+                "sent": "When I was in my teens, that Tupac was alive and would come back for an album (I want to say it was the \u201cTheory of 7s or something).\n\nI\u2019m a bit more critical of what I read now.",
+                "labl": 409,
+                "true_bin": 4,
+                "pred_bin": 1
+            },
+            {
+                "sent": "Carol Baskin didn't kill her husband \n\nI believe he was heavily involved with drugs and thats the reason why everything he touched turned to 'gold'. I think he he flew drugs over to Mexico and it all went wrong and never made it back",
+                "labl": 1556,
+                "true_bin": 4,
+                "pred_bin": 1
+            },
+            {
+                "sent": "My girlfriend once yelled in her sleep \"no No NO you SPUNKY LESBIAN\"\n\nI'm a dude\n\nstill tease her about it",
+                "labl": 1467,
+                "true_bin": 4,
+                "pred_bin": 1
+            },
+            {
+                "sent": "My sister talks in her sleep.\n\nOne time she \"woke up\", looked at me and asked me in a really hurt tone \"Why did you do that? That was so mean of you. How could you?!\" \n\nI was super confused and worried that I've actually hurt her somehow and wanted to get details out of her. \"What do you mean? What have I done?!\" \n\nShe just ignored me and showed me the cold shoulder...and fell back asleep again. \n\nI worried the whole night what she meant. Have I really done something?! \n\nI asked her the next morning and she couldn't remember at all.",
+                "labl": 476,
+                "true_bin": 4,
+                "pred_bin": 2
+            },
+            {
+                "sent": "He would also say, \u201cmy name isn\u2019t God\u201d then he would pronounce his name and everyone\u2019s faces would melt.",
+                "labl": 6449,
+                "true_bin": 4,
+                "pred_bin": 1
+            },
+            {
+                "sent": "Hentai",
+                "labl": 1039,
+                "true_bin": 4,
+                "pred_bin": 1
+            },
+            {
+                "sent": "Gene Wilder in original Charlie and the Chocolate factory \u201cstop, don\u2019t... come back\u201d",
+                "labl": 19623,
+                "true_bin": 4,
+                "pred_bin": 1
+            },
+            {
+                "sent": "Complaining about chores makes you look like such an arsehole. We give you the easiest dumbfuck jobs we can think of, and if you did them you'd be done in about 5 mins.",
+                "labl": 161,
+                "true_bin": 4,
+                "pred_bin": 1
+            },
+            {
+                "sent": "I tried cutting open a lemon with a fork\n\n\nEdit: the fork slipped and entered my hand, but I guess the sharp lemon theory will do! thanks for the award kind stranger!",
+                "labl": 5650,
+                "true_bin": 4,
+                "pred_bin": 2
+            },
+            {
+                "sent": "ENGLISH! I used to be terrible and my accent still sucks sometimes, but after more than 20 years of practice and a bachelor degree from an English university, now I'm quite proud to be bilingual.",
+                "labl": 16230,
+                "true_bin": 4,
+                "pred_bin": 2
+            },
+            {
+                "sent": "God isn't really a name though.",
+                "labl": 117,
+                "true_bin": 4,
+                "pred_bin": 1
+            },
+            {
+                "sent": "Yeah, a megathread is probably best for this. RIP to her.",
+                "labl": 3795,
+                "true_bin": 4,
+                "pred_bin": 1
+            }
+        ]
+    }
+]
